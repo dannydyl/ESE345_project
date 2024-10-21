@@ -1,0 +1,22 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=MIPS
+[Library]
+MIPS=\\Mac\Home\Documents\SBU_2024_Fall\ESE345\ese345_project\ese345_project\MIPS\MIPS\MIPS.lib
+[$LibMap$]
+MIPS=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/R3_instruction.vhd=-1
+[Files.Data]
+.\src\R3_instruction.vhd=VHDL Source Code
