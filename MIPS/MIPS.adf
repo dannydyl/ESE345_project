@@ -19,6 +19,8 @@ FAMILY=
 [Files]
 /R3_instruction.vhd=-1
 /op_package.vhd=-1
+/CLZ.vhd=-1
 [Files.Data]
 .\src\R3_instruction.vhd=VHDL Source Code
 .\src\op_package.vhd=VHDL Source Code
+.\src\CLZ.vhd=VHDL Source Code

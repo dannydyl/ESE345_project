@@ -42,7 +42,8 @@ begin
 	--shamt <= to_integer()
 
 	-- need module for CLZ, saturated arithmetic, count 1s
-
+	CLZ_module : entity work.CLZ
+		port map(
 
 
 	-- case statement for decoding opcode

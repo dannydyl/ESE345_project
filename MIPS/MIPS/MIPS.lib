@@ -1,12 +1,24 @@
-timestamp=1729628943161
+timestamp=1729654209043
 
 [~A]
-ModifyID=2
+ModifyID=5
 Version=74
 
 [~MFT]
-0=4|0MIPS.mgf|2332|0
-1=0|1MIPS.mgf|0|0
+0=8|0MIPS.mgf|4409|639
+1=2|1MIPS.mgf|3524|923
+3=2|3MIPS.mgf|0|0
+
+[clz]
+A/clz=A/CLZ 21|../src/CLZ.vhd|34|1*3524
+BinW64/clz=3*0
+I=0*3135
+I/clz=I/CLZ 0*4409
+M=11|2|vf5|1729653996666|../src/CLZ.vhd|0*2809*0x59f4d9c0da6cb827d839a19c24e43d0543e8da5a|0*3064*0x23b75c12e3e89f2ef000564498faa8c2
+M/clz=M/CLZ 21|2|vf5|1729654208965|../src/CLZ.vhd|0*4009*0xd4fa7808f88623e394a0ba6c585d59bdc5d0d248|0*4331*0x20116f55b147878295aeff36dce7fc50
+R=../src/CLZ.vhd|26
+Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|a8fd09a5a1e2c49a6015c5615ccf6ccd1d4bee6717e98b9c78857221cd1e7381
+Version/clz=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|a8fd09a5a1e2c49a6015c5615ccf6ccd5ccd1f31c848a06c073603a2b1d24ae0
 
 [op_package]
 E=1*0
@@ -22,5 +34,6 @@ R=../src/R3_instruction.vhd|26
 Version=15.0.261.9132 (Windows64)|00000003789cd3f5370600015b00b0|216828a385da3ef317df5b5be0232042d65c8c6a6ad1d20334ae964422bb741ce07c97f26310ab613318adf3f0f743e2
 
 [~U]
+clz=CLZ 11|0*2618|
 op_package=3|0*0|0*126
 r3_instruction=R3_instruction 11|0*1630|
