@@ -52,3 +52,41 @@ acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
 # Error: COMP96_0029: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (64, 4): Expression expected.
 # Error: COMP96_0029: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (76, 4): Expression expected.
 # Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/CLZ.vhd
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Error: COMP96_0110: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (42, 5): Signal cannot be the target of a variable assignment.
+# Error: COMP96_0393: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (42, 14): Cannot read output : "count".
+# Error: COMP96_0651: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (42, 22): Operator "+" returning 'STD_LOGIC_VECTOR' is not defined for such operands.
+# Error: COMP96_0077: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (42, 14): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (48, 12): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/CLZ.vhd
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (48, 12): Assignment target incompatible with right side. Cannot convert 'INTEGER' to 'STD_LOGIC_VECTOR'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/CLZ.vhd
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (48, 29): Explicit type conversions are allowed between closely related types only.
+# Warning: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (48, 12): Improper array length (1). Expected length is 16.
+# Compile failure 1 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/CLZ.vhd
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Warning: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (48, 12): Improper array length (8). Expected length is 16.
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/CLZ.vhd
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0029: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (83, 4): Expression expected.
+# Error: COMP96_0015: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (95, 5): ';' expected.
+# Error: COMP96_0015: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (107, 5): ';' expected.
+# Error: COMP96_0029: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (115, 4): Expression expected.
+# Error: COMP96_0029: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (122, 4): Expression expected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]

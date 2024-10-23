@@ -20,7 +20,13 @@ FAMILY=
 /R3_instruction.vhd=-1
 /op_package.vhd=-1
 /CLZ.vhd=-1
+/AHS.vhd=-1
+/CNT1H.vhd=-1
+/SFHS.vhd=-1
 [Files.Data]
 .\src\R3_instruction.vhd=VHDL Source Code
 .\src\op_package.vhd=VHDL Source Code
 .\src\CLZ.vhd=VHDL Source Code
+.\src\AHS.vhd=VHDL Source Code
+.\src\CNT1H.vhd=VHDL Source Code
+.\src\SFHS.vhd=VHDL Source Code

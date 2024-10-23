@@ -1,3 +1,6 @@
 i<>.\src\R3_instruction.vhd
 i<>.\src\op_package.vhd
 i<>.\src\CLZ.vhd
+i<>.\src\AHS.vhd
+i<>.\src\CNT1H.vhd
+i<>.\src\SFHS.vhd

@@ -2,9 +2,9 @@
 Built-in symbols=0
 MIPS=0
 [COMPILESTATUS|.\src\R3_instruction.vhd]
-FileTimeLow=599698099
-FileTimeHigh=31139068
-Status=Modified
+FileTimeLow=3047059018
+FileTimeHigh=31139184
+Status=Error
 [COMPILESTATUS|.\src\op_package.vhd]
 FileTimeLow=77483764
 FileTimeHigh=31139009
@@ -12,4 +12,16 @@ Status=Compiled
 [COMPILESTATUS|.\src\CLZ.vhd]
 FileTimeLow=584127401
 FileTimeHigh=31139068
+Status=Modified
+[COMPILESTATUS|.\src\AHS.vhd]
+FileTimeLow=1842455683
+FileTimeHigh=31139185
+Status=Modified
+[COMPILESTATUS|.\src\CNT1H.vhd]
+FileTimeLow=2123827749
+FileTimeHigh=31139195
+Status=Modified
+[COMPILESTATUS|.\src\SFHS.vhd]
+FileTimeLow=2884115060
+FileTimeHigh=31139196
 Status=Modified
