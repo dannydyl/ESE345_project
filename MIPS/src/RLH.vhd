@@ -75,14 +75,14 @@ begin
 	b_shamt_index1 <= input_b(19 downto 16);
 	b_shamt_index0 <= input_b(3 downto 0);
 
-	result_hw_index7 <= rotate_left(a_hw_index7, to_integer(unsigned(b_shamt_index7), 4));
-	result_hw_index6 <= rotate_left(a_hw_index6, to_integer(unsigned(b_shamt_index6), 4));
-	result_hw_index5 <= rotate_left(a_hw_index5, to_integer(unsigned(b_shamt_index5), 4));
-	result_hw_index4 <= rotate_left(a_hw_index4, to_integer(unsigned(b_shamt_index4), 4));
-	result_hw_index3 <= rotate_left(a_hw_index3, to_integer(unsigned(b_shamt_index3), 4));
-	result_hw_index2 <= rotate_left(a_hw_index2, to_integer(unsigned(b_shamt_index2), 4));
-	result_hw_index1 <= rotate_left(a_hw_index1, to_integer(unsigned(b_shamt_index1), 4));
-	result_hw_index0 <= rotate_left(a_hw_index0, to_integer(unsigned(b_shamt_index0), 4));
+	result_hw_index7 <= std_logic_vector(rotate_left(unsigned(a_hw_index7), to_integer(unsigned(b_shamt_index7))));
+	result_hw_index6 <= std_logic_vector(rotate_left(unsigned(a_hw_index6), to_integer(unsigned(b_shamt_index6))));
+	result_hw_index5 <= std_logic_vector(rotate_left(unsigned(a_hw_index5), to_integer(unsigned(b_shamt_index5))));
+	result_hw_index4 <= std_logic_vector(rotate_left(unsigned(a_hw_index4), to_integer(unsigned(b_shamt_index4))));
+	result_hw_index3 <= std_logic_vector(rotate_left(unsigned(a_hw_index3), to_integer(unsigned(b_shamt_index3))));
+	result_hw_index2 <= std_logic_vector(rotate_left(unsigned(a_hw_index2), to_integer(unsigned(b_shamt_index2))));
+	result_hw_index1 <= std_logic_vector(rotate_left(unsigned(a_hw_index1), to_integer(unsigned(b_shamt_index1))));
+	result_hw_index0 <= std_logic_vector(rotate_left(unsigned(a_hw_index0), to_integer(unsigned(b_shamt_index0))));
 
 	output_result <= result_hw_index7 & result_hw_index6 & result_hw_index5 & result_hw_index4 & result_hw_index3 & result_hw_index2 & result_hw_index1 & result_hw_index0;
 

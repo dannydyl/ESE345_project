@@ -638,4 +638,114 @@ acom -O3 -e 100 -work MIPS -2008  $dsn/src/R3_instruction.vhd $dsn/src/op_packag
 # Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
 # Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 47): Cannot find function "to_integer" for these actuals.
 # Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
-# Error: COMP96_0617: //Mac/Home/Documents/SBU
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 32 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/MLHCU.vhd
+# Compile Entity "MLHCU"
+# Compile Architecture "MLHCU" of Entity "MLHCU"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 24 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Compile failure 8 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 64): The type of the actual in the subprogram call does not match the "INTEGER" type of the "COUNT" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 74): The type of the actual in the subprogram call does not match the "INTEGER" type of the "COUNT" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Compile failure 9 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 51)
