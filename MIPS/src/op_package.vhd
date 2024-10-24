@@ -31,8 +31,8 @@ package op_package is
     constant OP_BCW    : std_logic_vector(3 downto 0) := "0110";  -- BCW: broadcast word
     constant OP_MAXWS  : std_logic_vector(3 downto 0) := "0111";  -- MAXWS: max signed word
     constant OP_MINWS  : std_logic_vector(3 downto 0) := "1000";  -- MINWS: min signed word
-    constant OP_MLUH   : std_logic_vector(3 downto 0) := "1001";  -- MLUH: multiply low unsigned
-    constant OP_MLHU   : std_logic_vector(3 downto 0) := "1010";  -- MLHU: multiply low by constant unsigned
+    constant OP_MLHU   : std_logic_vector(3 downto 0) := "1001";  -- MLUH: multiply low unsigned
+    constant OP_MLHCU   : std_logic_vector(3 downto 0) := "1010";  -- MLHU: multiply low by constant unsigned
     constant OP_OR     : std_logic_vector(3 downto 0) := "1011";  -- OR: bitwise logical or
     constant OP_CLZH   : std_logic_vector(3 downto 0) := "1100";  -- CLZH: count leading zeroes in halfwords
     constant OP_RLH    : std_logic_vector(3 downto 0) := "1101";  -- RLH: rotate left bits in halfwords

@@ -79,7 +79,8 @@ begin
 	end process;
 
 	process(input_hw_index5)
-  begin
+	variable count : integer := 0;
+  	begin
 		for i in 15 downto 0 loop
 			if input_hw_index5(i) = '1' then
 				count := count + 1;

@@ -74,7 +74,7 @@ begin
 			end if;
 		end loop;
 		
-		count_index <= std_logic_vector(to_unsigned(count_zeros, 16));
+		count_index7 <= std_logic_vector(to_unsigned(count_zeros, 16));
 	end process;
 
 	process(input_hw_index6)

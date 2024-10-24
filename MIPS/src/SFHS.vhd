@@ -23,9 +23,9 @@ use ieee.numeric_std.all;
 
 entity SFHS is
 	port(
-		a_input : in std_logic_vector(127 downto 0); -- rs2
-		b_input : in std_logic_vector(127 downto 0); -- rs1
-		result_output : out std_logic_vector(127 downto 0)
+		input_a : in std_logic_vector(127 downto 0); -- rs2
+		input_b : in std_logic_vector(127 downto 0); -- rs1
+		output_result : out std_logic_vector(127 downto 0)
 	);
 end SFHS;
 
@@ -68,26 +68,26 @@ architecture SFHS of SFHS is
 
 	constant MAX : integer := 32767;
 	constant MIN : integer := -32768;
-	constant MAX_result : std_logic_vector(15 downto 0) := X"7FFF";
-	constant MIN_result : std_logic_vector(15 downto 0) := X"8000";
+	constant MAX_result : std_logic_vector(31 downto 0) := X"00007FFF";
+	constant MIN_result : std_logic_vector(31 downto 0) := X"00008000";
 begin
-	a_long_index7 <= std_logic_vector(resize(signed(a_input(127 downto 112),32)));
-	a_long_index6 <= std_logic_vector(resize(signed(a_input(111 downto 96),32)));
-	a_long_index5 <= std_logic_vector(resize(signed(a_input(95 downto 80),32)));
-	a_long_index4 <= std_logic_vector(resize(signed(a_input(79 downto 64),32)));
-	a_long_index3 <= std_logic_vector(resize(signed(a_input(63 downto 48),32)));
-	a_long_index2 <= std_logic_vector(resize(signed(a_input(47 downto 32),32)));
-	a_long_index1 <= std_logic_vector(resize(signed(a_input(31 downto 16),32)));
-	a_long_index0 <= std_logic_vector(resize(signed(a_input(15 downto 0),32)));
+	a_long_index7 <= std_logic_vector(resize(signed(input_a(127 downto 112)),32));
+	a_long_index6 <= std_logic_vector(resize(signed(input_a(111 downto 96)),32));
+	a_long_index5 <= std_logic_vector(resize(signed(input_a(95 downto 80)),32));
+	a_long_index4 <= std_logic_vector(resize(signed(input_a(79 downto 64)),32));
+	a_long_index3 <= std_logic_vector(resize(signed(input_a(63 downto 48)),32));
+	a_long_index2 <= std_logic_vector(resize(signed(input_a(47 downto 32)),32));
+	a_long_index1 <= std_logic_vector(resize(signed(input_a(31 downto 16)),32));
+	a_long_index0 <= std_logic_vector(resize(signed(input_a(15 downto 0)),32));
 
-	b_long_index7 <= std_logic_vector(resize(signed(b_input(127 downto 112),32)));
-	b_long_index6 <= std_logic_vector(resize(signed(b_input(111 downto 96),32)));
-	b_long_index5 <= std_logic_vector(resize(signed(b_input(95 downto 80),32)));
-	b_long_index4 <= std_logic_vector(resize(signed(b_input(79 downto 64),32)));
-	b_long_index3 <= std_logic_vector(resize(signed(b_input(63 downto 48),32)));
-	b_long_index2 <= std_logic_vector(resize(signed(b_input(47 downto 32),32)));
-	b_long_index1 <= std_logic_vector(resize(signed(b_input(31 downto 16),32)));
-	b_long_index0 <= std_logic_vector(resize(signed(b_input(15 downto 0),32)));
+	b_long_index7 <= std_logic_vector(resize(signed(input_b(127 downto 112)),32));
+	b_long_index6 <= std_logic_vector(resize(signed(input_b(111 downto 96)),32));
+	b_long_index5 <= std_logic_vector(resize(signed(input_b(95 downto 80)),32));
+	b_long_index4 <= std_logic_vector(resize(signed(input_b(79 downto 64)),32));
+	b_long_index3 <= std_logic_vector(resize(signed(input_b(63 downto 48)),32));
+	b_long_index2 <= std_logic_vector(resize(signed(input_b(47 downto 32)),32));
+	b_long_index1 <= std_logic_vector(resize(signed(input_b(31 downto 16)),32));
+	b_long_index0 <= std_logic_vector(resize(signed(input_b(15 downto 0)),32));
 
 	result_long_index7 <= std_logic_vector(signed(a_long_index7) - signed(b_long_index7));
 	result_long_index6 <= std_logic_vector(signed(a_long_index6) - signed(b_long_index6));
@@ -157,6 +157,6 @@ begin
 		result_index1 <= result_long_index1(15 downto 0);
 		result_index0 <= result_long_index0(15 downto 0);
 
-		result_output <= result_index7 & result_index6 & result_index5 & result_index4 & result_index3 & result_index2 & result_index1 & result_index0;
+		output_result <= result_index7 & result_index6 & result_index5 & result_index4 & result_index3 & result_index2 & result_index1 & result_index0;
 	end process;
 end SFHS;

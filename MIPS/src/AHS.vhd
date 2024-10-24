@@ -71,26 +71,26 @@ architecture AHS of AHS is
 
 	constant MAX : integer := 32767;
 	constant MIN : integer := -32768;
-	constant MAX_result : std_logic_vector(15 downto 0) := X"7FFF";
-	constant MIN_result : std_logic_vector(15 downto 0) := X"8000";
+	constant MAX_result : std_logic_vector(31 downto 0) := X"00007FFF";
+	constant MIN_result : std_logic_vector(31 downto 0) := X"00008000";
 begin
-	a_long_index7 <= std_logic_vector(resize(signed(a_input(127 downto 112),32)));
-	a_long_index6 <= std_logic_vector(resize(signed(a_input(111 downto 96),32)));
-	a_long_index5 <= std_logic_vector(resize(signed(a_input(95 downto 80),32)));
-	a_long_index4 <= std_logic_vector(resize(signed(a_input(79 downto 64),32)));
-	a_long_index3 <= std_logic_vector(resize(signed(a_input(63 downto 48),32)));
-	a_long_index2 <= std_logic_vector(resize(signed(a_input(47 downto 32),32)));
-	a_long_index1 <= std_logic_vector(resize(signed(a_input(31 downto 16),32)));
-	a_long_index0 <= std_logic_vector(resize(signed(a_input(15 downto 0),32)));
+	a_long_index7 <= std_logic_vector(resize(signed(a_input(127 downto 112)),32));
+	a_long_index6 <= std_logic_vector(resize(signed(a_input(111 downto 96)),32));
+	a_long_index5 <= std_logic_vector(resize(signed(a_input(95 downto 80)),32));
+	a_long_index4 <= std_logic_vector(resize(signed(a_input(79 downto 64)),32));
+	a_long_index3 <= std_logic_vector(resize(signed(a_input(63 downto 48)),32));
+	a_long_index2 <= std_logic_vector(resize(signed(a_input(47 downto 32)),32));
+	a_long_index1 <= std_logic_vector(resize(signed(a_input(31 downto 16)),32));
+	a_long_index0 <= std_logic_vector(resize(signed(a_input(15 downto 0)),32));
 
-	b_long_index7 <= std_logic_vector(resize(signed(b_input(127 downto 112),32)));
-	b_long_index6 <= std_logic_vector(resize(signed(b_input(111 downto 96),32)));
-	b_long_index5 <= std_logic_vector(resize(signed(b_input(95 downto 80),32)));
-	b_long_index4 <= std_logic_vector(resize(signed(b_input(79 downto 64),32)));
-	b_long_index3 <= std_logic_vector(resize(signed(b_input(63 downto 48),32)));
-	b_long_index2 <= std_logic_vector(resize(signed(b_input(47 downto 32),32)));
-	b_long_index1 <= std_logic_vector(resize(signed(b_input(31 downto 16),32)));
-	b_long_index0 <= std_logic_vector(resize(signed(b_input(15 downto 0),32)));
+	b_long_index7 <= std_logic_vector(resize(signed(b_input(127 downto 112)),32));
+	b_long_index6 <= std_logic_vector(resize(signed(b_input(111 downto 96)),32));
+	b_long_index5 <= std_logic_vector(resize(signed(b_input(95 downto 80)),32));
+	b_long_index4 <= std_logic_vector(resize(signed(b_input(79 downto 64)),32));
+	b_long_index3 <= std_logic_vector(resize(signed(b_input(63 downto 48)),32));
+	b_long_index2 <= std_logic_vector(resize(signed(b_input(47 downto 32)),32));
+	b_long_index1 <= std_logic_vector(resize(signed(b_input(31 downto 16)),32));
+	b_long_index0 <= std_logic_vector(resize(signed(b_input(15 downto 0)),32));
 
 	result_long_index7 <= std_logic_vector(signed(a_long_index7) + signed(b_long_index7));
 	result_long_index6 <= std_logic_vector(signed(a_long_index6) + signed(b_long_index6));

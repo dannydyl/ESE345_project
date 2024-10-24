@@ -90,3 +90,552 @@ acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
 # Error: COMP96_0029: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (115, 4): Expression expected.
 # Error: COMP96_0029: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (122, 4): Expression expected.
 # Compile failure 5 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd $dsn/src/op_package.vhd $dsn/src/CLZ.vhd $dsn/src/AHS.vhd $dsn/src/CNT1H.vhd $dsn/src/SFHS.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHCU.vhd $dsn/src/RLH.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (51, 11): Assignment target incompatible with right side. Cannot convert 'UNSIGNED' to 'INTEGER'.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (57, 4): Unknown identifier "output_count".
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (56, 16): Improper array length (128). Expected length is 16.
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (57, 4): Cannot find object declaration.
+# Error: COMP96_0112: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (57, 4): "output_count" does not match the formal name.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (60, 26): Unknown identifier "AHS".
+# Error: COMP96_0055: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (60, 21): Cannot find context item "work.AHS".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (67, 28): Unknown identifier "CNT1H".
+# Error: COMP96_0055: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (67, 23): Cannot find context item "work.CNT1H".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (73, 27): Unknown identifier "SFHS".
+# Error: COMP96_0055: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (73, 22): Cannot find context item "work.SFHS".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (80, 28): Unknown identifier "MAXWS".
+# Error: COMP96_0055: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (80, 23): Cannot find context item "work.MAXWS".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (87, 28): Unknown identifier "MINWS".
+# Error: COMP96_0055: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (87, 23): Cannot find context item "work.MINWS".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (94, 28): Unknown identifier "MLHCU".
+# Error: COMP96_0055: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (94, 23): Cannot find context item "work.MLHCU".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (101, 26): Unknown identifier "RLH".
+# Error: COMP96_0055: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (101, 21): Cannot find context item "work.RLH".
+# Error: COMP96_0664: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (144, 12): Value 128 out of range 127 downto 0.
+# Warning: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (144, 30): Improper array length (32). Expected length is 33.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (148, 9): Unknown identifier "OP_MLHCU".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Unknown identifier "MLHCU_result".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Cannot find object declaration.
+# Error: COMP96_0077: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile Package "op_package"
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (77, 3): Unknown identifier "count_index".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (77, 3): Cannot find object declaration.
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
+# Error: COMP96_0025: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (104, 10): Identifier or string literal expected.
+# Error: COMP96_0019: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (108, 3): Keyword 'end' expected.
+# Error: COMP96_0016: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (108, 8): Design unit declaration expected.
+# Compile Entity "CNT1H"
+# Compile Architecture "CNT1H" of Entity "CNT1H"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 5): Unknown identifier "count".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 14): Unknown identifier "count".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 5): Cannot find object declaration.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Unknown identifier "count".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Cannot find object declaration.
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Error: COMP96_0025: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (101, 10): Identifier or string literal expected.
+# Error: COMP96_0019: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (105, 3): Keyword 'end' expected.
+# Error: COMP96_0016: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (105, 8): Design unit declaration expected.
+# Compile Entity "MAXWS"
+# Compile Architecture "MAXWS" of Entity "MAXWS"
+# Compile Entity "MINWS"
+# Compile Architecture "MINWS" of Entity "MINWS"
+# Compile Entity "MLHCU"
+# Compile Architecture "MLHCU" of Entity "MLHCU"
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (48, 88): The type of the actual in the subprogram call does not match the "UNSIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (49, 88): The type of the actual in the subprogram call does not match the "UNSIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (50, 88): The type of the actual in the subprogram call does not match the "UNSIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (51, 88): The type of the actual in the subprogram call does not match the "UNSIGNED" type of the "ARG" parameter.
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 65 Errors 1 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (98, 21): Unknown identifier "MLHCU_result".
+# Error: COMP96_0664: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (144, 12): Value 128 out of range 127 downto 0.
+# Warning: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (144, 30): Improper array length (32). Expected length is 33.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (148, 9): Unknown identifier "OP_MLHCU".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Unknown identifier "MLHCU_result".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Cannot find object declaration.
+# Error: COMP96_0077: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 6 Errors 1 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (51, 11): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0077: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (51, 11): Undefined type of expression. Expected type 'INTEGER'.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (98, 21): Unknown identifier "MLHCU_result".
+# Error: COMP96_0664: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (144, 12): Value 128 out of range 127 downto 0.
+# Warning: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (144, 30): Improper array length (32). Expected length is 33.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (148, 9): Unknown identifier "OP_MLHCU".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Unknown identifier "MLHCU_result".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Cannot find object declaration.
+# Error: COMP96_0077: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 8 Errors 1 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (98, 21): Unknown identifier "MLHCU_result".
+# Error: COMP96_0664: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (144, 12): Value 128 out of range 127 downto 0.
+# Warning: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (144, 30): Improper array length (32). Expected length is 33.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (148, 9): Unknown identifier "OP_MLHCU".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Unknown identifier "MLHCU_result".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Cannot find object declaration.
+# Error: COMP96_0077: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 15): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 6 Errors 1 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (98, 4): Unknown identifier "input_b".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (98, 4): Cannot find object declaration.
+# Error: COMP96_0112: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (98, 4): "input_b" does not match the formal name.
+# Error: COMP96_0207: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (95, 2): No actual specified for local port "input_const".
+# Error: COMP96_0664: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (145, 12): Value 128 out of range 127 downto 0.
+# Warning: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (145, 30): Improper array length (32). Expected length is 33.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 9): Unknown identifier "OP_MLHCU".
+# Compile failure 6 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0664: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (145, 12): Value 128 out of range 127 downto 0.
+# Warning: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (145, 30): Improper array length (32). Expected length is 33.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 9): Unknown identifier "OP_MLHCU".
+# Compile failure 2 Errors 1 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 9): Unknown identifier "OP_MLHCU".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 9): Unknown identifier "OP_MLHCU".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd $dsn/src/op_package.vhd $dsn/src/CLZ.vhd $dsn/src/AHS.vhd $dsn/src/CNT1H.vhd $dsn/src/SFHS.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHCU.vhd $dsn/src/RLH.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (149, 9): Unknown identifier "OP_MLHCU".
+# Compile Package "op_package"
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (77, 3): Unknown identifier "count_index".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (77, 3): Cannot find object declaration.
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
+# Error: COMP96_0025: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (104, 10): Identifier or string literal expected.
+# Error: COMP96_0019: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (108, 3): Keyword 'end' expected.
+# Error: COMP96_0016: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (108, 8): Design unit declaration expected.
+# Compile Entity "CNT1H"
+# Compile Architecture "CNT1H" of Entity "CNT1H"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 5): Unknown identifier "count".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 14): Unknown identifier "count".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 5): Cannot find object declaration.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Unknown identifier "count".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Cannot find object declaration.
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Error: COMP96_0025: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (101, 10): Identifier or string literal expected.
+# Error: COMP96_0019: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (105, 3): Keyword 'end' expected.
+# Error: COMP96_0016: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (105, 8): Design unit declaration expected.
+# Compile Entity "MAXWS"
+# Compile Architecture "MAXWS" of Entity "MAXWS"
+# Compile Entity "MINWS"
+# Compile Architecture "MINWS" of Entity "MINWS"
+# Compile Entity "MLHCU"
+# Compile Architecture "MLHCU" of Entity "MLHCU"
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (48, 88): The type of the actual in the subprogram call does not match the "UNSIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (49, 88): The type of the actual in the subprogram call does not match the "UNSIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (50, 88): The type of the actual in the subprogram call does not match the "UNSIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (51, 88): The type of the actual in the subprogram call does not match the "UNSIGNED" type of the "ARG" parameter.
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 34): The type of the actual in the subprogram call does not match the "SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 22): Assignment target incompatible with right side. Cannot convert 'SIGNED' to 'STD_LOGIC_VECTOR'.
+# Compile failure 42 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/R3_instruction.vhd : (144, 9): Unknown identifier "OP_MLHU".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/op_package.vhd
+# Compile Package "op_package"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/CLZ.vhd
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (77, 3): Unknown identifier "count_index".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CLZ.vhd : (77, 3): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/CLZ.vhd
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
+# Error: COMP96_0025: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (104, 10): Identifier or string literal expected.
+# Error: COMP96_0019: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (108, 3): Keyword 'end' expected.
+# Error: COMP96_0016: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (108, 8): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/R3_instruction.vhd $dsn/src/op_package.vhd $dsn/src/CLZ.vhd $dsn/src/AHS.vhd $dsn/src/CNT1H.vhd $dsn/src/SFHS.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHCU.vhd $dsn/src/RLH.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Compile Package "op_package"
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (77, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (77, 74): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (77, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (78, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (78, 73): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (78, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (79, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (79, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (79, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (80, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (80, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (80, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (81, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (81, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (81, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (82, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (82, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (82, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (83, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (83, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (83, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (84, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (84, 71): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (84, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (86, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (86, 74): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (86, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (87, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (87, 73): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (87, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (88, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (88, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (88, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (89, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (89, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (89, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (90, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (90, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (90, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (91, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (91, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (91, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (92, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (92, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (92, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (93, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (93, 71): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (93, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (107, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (109, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (113, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (115, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (119, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (121, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (125, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (127, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (131, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (133, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (137, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (139, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (143, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (145, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (149, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (151, 26): Improper array length (16). Expected length is 32.
+# Compile Entity "CNT1H"
+# Compile Architecture "CNT1H" of Entity "CNT1H"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 5): Unknown identifier "count".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 14): Unknown identifier "count".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 5): Cannot find object declaration.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Unknown identifier "count".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Cannot find object declaration.
+# Error: COMP96_0104: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Undefined type of expression.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 62): The type of the actual in the subprogram call does not match the "UNRESOLVED_UNSIGNED" type of the "SIZE_RES" parameter.
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Too many errors - compilation terminated
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (74, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (74, 74): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (74, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (75, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (75, 73): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (75, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (76, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (76, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (76, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (77, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (77, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (77, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (78, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (78, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (78, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (79, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (79, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (79, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (80, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (80, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (80, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (81, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (81, 71): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (81, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (83, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (83, 74): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (83, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (84, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (84, 73): Explicit type conversions are allowed between closely related types only.
+# Compile failure 100 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work MIPS -2002  $dsn/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# A feature of VHDL 2008 has been detected. Use the -2008 argument of the vcom command.
+# Error: COMP96_0025: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (104, 10): Identifier or string literal expected.
+# Error: COMP96_0019: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (108, 3): Keyword 'end' expected.
+# Error: COMP96_0016: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (108, 8): Design unit declaration expected.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (107, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (109, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (113, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (115, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (119, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (121, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (125, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (127, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (131, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (133, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (137, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (139, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (143, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (145, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (149, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (151, 26): Improper array length (16). Expected length is 32.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (74, 57): Improper array length (32). Expected length is 16.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/AHS.vhd : (75, 57): Improper array length (32). Expected length is 16.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/AHS.vhd
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/CNT1H.vhd
+# Compile Entity "CNT1H"
+# Compile Architecture "CNT1H" of Entity "CNT1H"
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 5): Unknown identifier "count".
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 14): Unknown identifier "count".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (85, 5): Cannot find object declaration.
+# Error: COMP96_0078: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Unknown identifier "count".
+# Error: COMP96_0133: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Cannot find object declaration.
+# Error: COMP96_0104: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 55): Undefined type of expression.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/CNT1H.vhd : (88, 62): The type of the actual in the subprogram call does not match the "UNRESOLVED_UNSIGNED" type of the "SIZE_RES" parameter.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/CNT1H.vhd
+# Compile Entity "CNT1H"
+# Compile Architecture "CNT1H" of Entity "CNT1H"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/SFHS.vhd
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (74, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (74, 74): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (74, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (75, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (75, 73): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (75, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (76, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (76, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (76, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (77, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (77, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (77, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (78, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (78, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (78, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (79, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (79, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (79, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (80, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (80, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (80, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (81, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (81, 71): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (81, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (83, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (83, 74): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (83, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (84, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (84, 73): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (84, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (85, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (85, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (85, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (86, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (86, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (86, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (87, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (87, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (87, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (88, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (88, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (88, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (89, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (89, 72): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (89, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0131: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (90, 49): Illegal operand for type conversion.
+# Error: COMP96_0149: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (90, 71): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0269: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (90, 36): For each formal parameter of a subprogram, a subprogram call must specify exactly one corresponding actual.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (104, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (106, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (110, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (112, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (116, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (118, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (122, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (124, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (128, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (130, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (134, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (136, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (140, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (142, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (146, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (148, 26): Improper array length (16). Expected length is 32.
+# Compile failure 64 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/SFHS.vhd
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (104, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (106, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (110, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (112, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (116, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (118, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (122, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (124, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (128, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (130, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (134, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (136, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (140, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (142, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (146, 26): Improper array length (16). Expected length is 32.
+# Error: COMP96_0367: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/SFHS.vhd : (148, 26): Improper array length (16). Expected length is 32.
+# Compile failure 16 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/SFHS.vhd
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/MAXWS.vhd
+# Compile Entity "MAXWS"
+# Compile Architecture "MAXWS" of Entity "MAXWS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/MINWS.vhd
+# Compile Entity "MINWS"
+# Compile Architecture "MINWS" of Entity "MINWS"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/R3_instruction.vhd $dsn/src/op_package.vhd $dsn/src/CLZ.vhd $dsn/src/AHS.vhd $dsn/src/CNT1H.vhd $dsn/src/SFHS.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHCU.vhd $dsn/src/RLH.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Compile Package "op_package"
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# Compile Entity "CNT1H"
+# Compile Architecture "CNT1H" of Entity "CNT1H"
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Compile Entity "MAXWS"
+# Compile Architecture "MAXWS" of Entity "MAXWS"
+# Compile Entity "MINWS"
+# Compile Architecture "MINWS" of Entity "MINWS"
+# Compile Entity "MLHCU"
+# Compile Architecture "MLHCU" of Entity "MLHCU"
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (48, 88): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (48, 101): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "SIZE_RES" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (49, 88): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (49, 101): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "SIZE_RES" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (50, 88): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (50, 101): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "SIZE_RES" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (51, 88): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/MLHCU.vhd : (51, 101): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "SIZE_RES" parameter.
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (78, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 22): Assignment target incompatible with right side. Cannot convert 'UNRESOLVED_SIGNED' to 'STD_ULOGIC_VECTOR'.
+# Error: COMP96_0305: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 47): Cannot find function "to_integer" for these actuals.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 34): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0617: //Mac/Home/Documents/SBU

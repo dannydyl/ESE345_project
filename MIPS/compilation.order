@@ -4,3 +4,7 @@
 .\src\AHS.vhd
 .\src\CNT1H.vhd
 .\src\SFHS.vhd
+.\src\MAXWS.vhd
+.\src\MINWS.vhd
+.\src\MLHCU.vhd
+.\src\RLH.vhd
