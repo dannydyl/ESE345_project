@@ -27,8 +27,9 @@ FAMILY=
 /MINWS.vhd=-1
 /MLHCU.vhd=-1
 /RLH.vhd=-1
-/R3_instruction.vhd=-1
-/op_package.vhd=-1
+/li_instr_testbench.vhd=-1
+/R4_intsr_testbench.vhd=-1
+/ALU_top_level.vhd=-1
 [Files.Data]
 .\src\R3_instruction.vhd=VHDL Source Code
 .\src\op_package.vhd=VHDL Source Code
@@ -40,8 +41,9 @@ FAMILY=
 .\src\MINWS.vhd=VHDL Source Code
 .\src\MLHCU.vhd=VHDL Source Code
 .\src\RLH.vhd=VHDL Source Code
-.\src\R3_instruction.vhd=VHDL Source Code
-.\src\op_package.vhd=VHDL Source Code
+.\src\li_instr_testbench.vhd=VHDL Source Code
+.\src\R4_intsr_testbench.vhd=VHDL Source Code
+.\src\ALU_top_level.vhd=VHDL Source Code
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0

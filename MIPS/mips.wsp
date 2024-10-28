@@ -57,3 +57,15 @@ Status=Compiled
 FileTimeLow=1320218818
 FileTimeHigh=31139280
 Status=Compiled
+[COMPILESTATUS|.\src\li_instr_testbench.vhd]
+FileTimeLow=32496292
+FileTimeHigh=31139401
+Status=Modified
+[COMPILESTATUS|.\src\R4_intsr_testbench.vhd]
+FileTimeLow=1655305437
+FileTimeHigh=31139405
+Status=Modified
+[COMPILESTATUS|.\src\ALU_top_level.vhd]
+FileTimeLow=2633253292
+FileTimeHigh=31140078
+Status=Modified

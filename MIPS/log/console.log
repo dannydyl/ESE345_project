@@ -748,4 +748,57 @@ acom -O3 -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
 acom -O3 -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
 # Compile Entity "RLH"
 # Compile Architecture "RLH" of Entity "RLH"
-# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 51)
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (79, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (80, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (81, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (82, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (83, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (84, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Error: COMP96_0093: //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd : (85, 51): The type of the actual in the subprogram call does not match the "UNRESOLVED_SIGNED" type of the "ARG" parameter.
+# Compile failure 7 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/R3_instruction.vhd $dsn/src/op_package.vhd $dsn/src/CLZ.vhd $dsn/src/AHS.vhd $dsn/src/CNT1H.vhd $dsn/src/SFHS.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHCU.vhd $dsn/src/RLH.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Compile Package "op_package"
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# Compile Entity "CNT1H"
+# Compile Architecture "CNT1H" of Entity "CNT1H"
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Compile Entity "MAXWS"
+# Compile Architecture "MAXWS" of Entity "MAXWS"
+# Compile Entity "MINWS"
+# Compile Architecture "MINWS" of Entity "MINWS"
+# Compile Entity "MLHCU"
+# Compile Architecture "MLHCU" of Entity "MLHCU"
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/R3_instruction.vhd $dsn/src/op_package.vhd $dsn/src/CLZ.vhd $dsn/src/AHS.vhd $dsn/src/CNT1H.vhd $dsn/src/SFHS.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHCU.vhd $dsn/src/RLH.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Compile Package "op_package"
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# Compile Entity "CNT1H"
+# Compile Architecture "CNT1H" of Entity "CNT1H"
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Compile Entity "MAXWS"
+# Compile Architecture "MAXWS" of Entity "MAXWS"
+# Compile Entity "MINWS"
+# Compile Architecture "MINWS" of Entity "MINWS"
+# Compile Entity "MLHCU"
+# Compile Architecture "MLHCU" of Entity "MLHCU"
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
