@@ -34,13 +34,21 @@ end ALU_top_level;
 
 architecture ALU_top_level of ALU_top_level is
 	signal instr_type : std_logic_vector(1 downto 0); -- determine the type of instruction Li type, R4 type, R3 type
-	signal R3_output_result : std_logic_vector(127 downto 0);
+	signal R3_output_result : std_logic_vector(127 downto 0);	  
+	signal Li_output_result : std_logic_vector(127 downto 0);
 begin
 
 	-- include the type of instruction
 
 	-- Li type
-
+	li_type : entity work.load_instruction
+		port map(
+			rs1 => input_a,
+			rs2 => input_b,
+			rs3 => input_c,
+			instruction => instr,
+			rd => Li_output_result
+		);
 	-- R4 type
 
 	-- R3 type
@@ -58,7 +66,7 @@ begin
 	process(all)
 	begin
 		if (instr_type(1)) then
-			-- Li type
+			output_result <= Li_output_result;
 		else
 			if(instr_type = "10") then
 				-- R4 type

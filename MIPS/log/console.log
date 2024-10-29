@@ -802,3 +802,7 @@ acom -O3 -e 100 -work MIPS -2008  $dsn/src/R3_instruction.vhd $dsn/src/op_packag
 # Compile Entity "RLH"
 # Compile Architecture "RLH" of Entity "RLH"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -O3 -e 100 -work MIPS -2008  $dsn/src/load_instruction.vhd
+# Compile Entity "load_instruction"
+# Compile Architecture "behavioral" of Entity "load_instruction"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
