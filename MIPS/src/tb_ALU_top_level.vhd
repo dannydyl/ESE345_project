@@ -193,8 +193,8 @@ begin
 			report "[R3] testing RLH"; -- rotate left bits in halfwords
 			instr <= "1100001101";
 			wait for 1 ns;
-			assert output_result <= x"011C0008" & x"0194000C" & x"011C0010" & x"01940010"
-			report "[R3] RLH test failed, expected 0x011C0008 0x0194000C 0x011C0010 0x01940010, got " & to_hstring(output_result)
+			assert output_result <= x"09180008" & x"1190000C" & x"09180010" & x"11900010"
+			report "[R3] RLH test failed, expected 0x09180008 0x1190000C 0x09180010 0x11900010, got " & to_hstring(output_result)
 			severity error;
 
 			report "[R3] testing SFWU"; -- subtract from word unsigned

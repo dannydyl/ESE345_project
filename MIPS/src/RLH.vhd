@@ -4,7 +4,7 @@
 -- Design      : MIPS
 -- Author      : Dongyun Lee
 -- Company     : Stony Brook University
---
+--																			 													   
 -------------------------------------------------------------------------------
 --
 -- File        : //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/RLH.vhd
@@ -30,23 +30,23 @@ entity RLH is
 end RLH;
 
 architecture RLH of RLH is
-	signal a_hw_index7 : std_logic_vector(15 downto 0);
-	signal a_hw_index6 : std_logic_vector(15 downto 0);
-	signal a_hw_index5 : std_logic_vector(15 downto 0);
-	signal a_hw_index4 : std_logic_vector(15 downto 0);
-	signal a_hw_index3 : std_logic_vector(15 downto 0);
-	signal a_hw_index2 : std_logic_vector(15 downto 0);
-	signal a_hw_index1 : std_logic_vector(15 downto 0);
-	signal a_hw_index0 : std_logic_vector(15 downto 0);
+	signal b_hw_index7 : std_logic_vector(15 downto 0);
+	signal b_hw_index6 : std_logic_vector(15 downto 0);
+	signal b_hw_index5 : std_logic_vector(15 downto 0);
+	signal b_hw_index4 : std_logic_vector(15 downto 0);
+	signal b_hw_index3 : std_logic_vector(15 downto 0);
+	signal b_hw_index2 : std_logic_vector(15 downto 0);
+	signal b_hw_index1 : std_logic_vector(15 downto 0);
+	signal b_hw_index0 : std_logic_vector(15 downto 0);
 
-	signal b_shamt_index7 : std_logic_vector(3 downto 0);
-	signal b_shamt_index6 : std_logic_vector(3 downto 0);
-	signal b_shamt_index5 : std_logic_vector(3 downto 0);
-	signal b_shamt_index4 : std_logic_vector(3 downto 0);
-	signal b_shamt_index3 : std_logic_vector(3 downto 0);
-	signal b_shamt_index2 : std_logic_vector(3 downto 0);
-	signal b_shamt_index1 : std_logic_vector(3 downto 0);
-	signal b_shamt_index0 : std_logic_vector(3 downto 0);
+	signal a_shamt_index7 : std_logic_vector(3 downto 0);
+	signal a_shamt_index6 : std_logic_vector(3 downto 0);
+	signal a_shamt_index5 : std_logic_vector(3 downto 0);
+	signal a_shamt_index4 : std_logic_vector(3 downto 0);
+	signal a_shamt_index3 : std_logic_vector(3 downto 0);
+	signal a_shamt_index2 : std_logic_vector(3 downto 0);
+	signal a_shamt_index1 : std_logic_vector(3 downto 0);
+	signal a_shamt_index0 : std_logic_vector(3 downto 0);
 
 	signal result_hw_index7 : std_logic_vector(15 downto 0);
 	signal result_hw_index6 : std_logic_vector(15 downto 0);
@@ -57,32 +57,32 @@ architecture RLH of RLH is
 	signal result_hw_index1 : std_logic_vector(15 downto 0);
 	signal result_hw_index0 : std_logic_vector(15 downto 0);
 begin
-	a_hw_index7 <= input_a(127 downto 112);
-	a_hw_index6 <= input_a(111 downto 96);
-	a_hw_index5 <= input_a(95 downto 80);
-	a_hw_index4 <= input_a(79 downto 64);
-	a_hw_index3 <= input_a(63 downto 48);
-	a_hw_index2 <= input_a(47 downto 32);
-	a_hw_index1 <= input_a(31 downto 16);
-	a_hw_index0 <= input_a(15 downto 0);
+	b_hw_index7 <= input_b(127 downto 112);
+	b_hw_index6 <= input_b(111 downto 96);
+	b_hw_index5 <= input_b(95 downto 80);
+	b_hw_index4 <= input_b(79 downto 64);
+	b_hw_index3 <= input_b(63 downto 48);
+	b_hw_index2 <= input_b(47 downto 32);
+	b_hw_index1 <= input_b(31 downto 16);
+	b_hw_index0 <= input_b(15 downto 0);
 
-	b_shamt_index7 <= input_b(115 downto 112);
-	b_shamt_index6 <= input_b(99 downto 96);
-	b_shamt_index5 <= input_b(83 downto 80);
-	b_shamt_index4 <= input_b(67 downto 64);
-	b_shamt_index3 <= input_b(51 downto 48);
-	b_shamt_index2 <= input_b(35 downto 32);
-	b_shamt_index1 <= input_b(19 downto 16);
-	b_shamt_index0 <= input_b(3 downto 0);
+	a_shamt_index7 <= input_a(115 downto 112);
+	a_shamt_index6 <= input_a(99 downto 96);
+	a_shamt_index5 <= input_a(83 downto 80);
+	a_shamt_index4 <= input_a(67 downto 64);
+	a_shamt_index3 <= input_a(51 downto 48);
+	a_shamt_index2 <= input_a(35 downto 32);
+	a_shamt_index1 <= input_a(19 downto 16);
+	a_shamt_index0 <= input_a(3 downto 0);
 
-	result_hw_index7 <= std_logic_vector(rotate_left(unsigned(a_hw_index7), to_integer(unsigned(b_shamt_index7))));
-	result_hw_index6 <= std_logic_vector(rotate_left(unsigned(a_hw_index6), to_integer(unsigned(b_shamt_index6))));
-	result_hw_index5 <= std_logic_vector(rotate_left(unsigned(a_hw_index5), to_integer(unsigned(b_shamt_index5))));
-	result_hw_index4 <= std_logic_vector(rotate_left(unsigned(a_hw_index4), to_integer(unsigned(b_shamt_index4))));
-	result_hw_index3 <= std_logic_vector(rotate_left(unsigned(a_hw_index3), to_integer(unsigned(b_shamt_index3))));
-	result_hw_index2 <= std_logic_vector(rotate_left(unsigned(a_hw_index2), to_integer(unsigned(b_shamt_index2))));
-	result_hw_index1 <= std_logic_vector(rotate_left(unsigned(a_hw_index1), to_integer(unsigned(b_shamt_index1))));
-	result_hw_index0 <= std_logic_vector(rotate_left(unsigned(a_hw_index0), to_integer(unsigned(b_shamt_index0))));
+	result_hw_index7 <= std_logic_vector(rotate_left(unsigned(b_hw_index7), to_integer(unsigned(a_shamt_index7))));
+	result_hw_index6 <= std_logic_vector(rotate_left(unsigned(b_hw_index6), to_integer(unsigned(a_shamt_index6))));
+	result_hw_index5 <= std_logic_vector(rotate_left(unsigned(b_hw_index5), to_integer(unsigned(a_shamt_index5))));
+	result_hw_index4 <= std_logic_vector(rotate_left(unsigned(b_hw_index4), to_integer(unsigned(a_shamt_index4))));
+	result_hw_index3 <= std_logic_vector(rotate_left(unsigned(b_hw_index3), to_integer(unsigned(a_shamt_index3))));
+	result_hw_index2 <= std_logic_vector(rotate_left(unsigned(b_hw_index2), to_integer(unsigned(a_shamt_index2))));
+	result_hw_index1 <= std_logic_vector(rotate_left(unsigned(b_hw_index1), to_integer(unsigned(a_shamt_index1))));
+	result_hw_index0 <= std_logic_vector(rotate_left(unsigned(b_hw_index0), to_integer(unsigned(a_shamt_index0))));
 
 	output_result <= result_hw_index7 & result_hw_index6 & result_hw_index5 & result_hw_index4 & result_hw_index3 & result_hw_index2 & result_hw_index1 & result_hw_index0;
 

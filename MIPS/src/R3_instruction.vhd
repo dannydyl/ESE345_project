@@ -84,7 +84,7 @@ begin
 									std_logic_vector(unsigned(a(63 downto 32)) - unsigned(b(63 downto 32))) &
 									std_logic_vector(unsigned(a(31 downto 0)) - unsigned(b(31 downto 0)));
 
-	-- need module for CLZ, saturated arithmetic, count 1s
+	-- external modules
 	CLZH_module : entity work.CLZ
 		port map(
 			input_hw => a,
@@ -174,66 +174,5 @@ begin
 						SFHS_result when OP_SFHS,
 
 						(others => '0') when others;	
-		
-	-- case statement for decoding opcode
-	-- process(opcode, a, b)
-	-- begin
-	-- 	case current_op is 
-	-- 		when OP_NOP =>
-	-- 			null;
-	-- 		when OP_SLHI => 
-	-- 			result(127 downto 112) <= std_logic_vector(shift_left(unsigned(a(127 downto 112)), shamt));
-	-- 			result(111 downto 96) <= std_logic_vector(shift_left(unsigned(a(111 downto 96)), shamt));
-	-- 			result(95 downto 80) <= std_logic_vector(shift_left(unsigned(a(95 downto 80)), shamt));
-	-- 			result(79 downto 64) <= std_logic_vector(shift_left(unsigned(a(79 downto 64)), shamt));
-	-- 			result(63 downto 48) <= std_logic_vector(shift_left(unsigned(a(63 downto 48)), shamt));
-	-- 			result(47 downto 32) <= std_logic_vector(shift_left(unsigned(a(47 downto 32)), shamt));
-	-- 			result(31 downto 16) <= std_logic_vector(shift_left(unsigned(a(31 downto 16)), shamt));
-	-- 			result(15 downto 0) <= std_logic_vector(shift_left(unsigned(a(15 downto 0)), shamt));
-	-- 		when OP_AU => 
-	-- 			result(127 downto 96) <= std_logic_vector(unsigned(a(127 downto 96)) + unsigned(b(127 downto 96)));
-	-- 			result(95 downto 64) <= std_logic_vector(unsigned(a(95 downto 64)) + unsigned(b(95 downto 64)));
-	-- 			result(63 downto 32) <= std_logic_vector(unsigned(a(63 downto 32)) + unsigned(b(63 downto 32)));
-	-- 			result(31 downto 0) <= std_logic_vector(unsigned(a(31 downto 0)) + unsigned(b(31 downto 0)));
-	-- 		when OP_CNTIH => 
-	-- 			result <= CNT1H_result;
-	-- 		when OP_AHS => 
-	-- 			result <= AHS_result;
-	-- 		when OP_AND => 
-	-- 			result <= a AND b;
-	-- 		when OP_BCW => 
-	-- 			result(127 downto 96) <= b(31 downto 0);
-	-- 			result(95 downto 64) <= b(31 downto 0);
-	-- 			result(63 downto 32) <= b(31 downto 0);
-	-- 			result(31 downto 0) <= b(31 downto 0);
-	-- 		when OP_MAXWS => 
-	-- 			result <= MAXWS_result;
-	-- 		when OP_MINWS => 
-	-- 			result <= MINWS_result;
-	-- 		when OP_MLHU => 
-	-- 			result(127 downto 96) <= std_logic_vector(unsigned(a(111 downto 96)) * unsigned(b(111 downto 96)));
-	-- 			result(95 downto 64) <= std_logic_vector(unsigned(a(79 downto 64)) * unsigned(b(79 downto 64)));
-	-- 			result(63 downto 32) <= std_logic_vector(unsigned(a(47 downto 32)) * unsigned(b(47 downto 32)));
-	-- 			result(31 downto 0) <= std_logic_vector(unsigned(a(15 downto 0)) * unsigned(b(15 downto 0)));
-	-- 		when OP_MLHCU => 
-	-- 			result <= MLHCU_result;
-	-- 		when OP_OR => 
-	-- 			result <= a OR b;
-	-- 		when OP_CLZH => 
-	-- 			result <= CLZ_result;
-	-- 		when OP_RLH => 
-	-- 			result <= RLH_result;
-	-- 		when OP_SFWU => 
-	-- 			result(127 downto 96) <= std_logic_vector(unsigned(a(127 downto 96)) - unsigned(b(127 downto 96)));
-	-- 			result(95 downto 64) <= std_logic_vector(unsigned(a(95 downto 64)) - unsigned(b(95 downto 64)));
-	-- 			result(63 downto 32) <= std_logic_vector(unsigned(a(63 downto 32)) - unsigned(b(63 downto 32)));
-	-- 			result(31 downto 0) <= std_logic_vector(unsigned(a(31 downto 0)) - unsigned(b(31 downto 0)));
-	-- 		when OP_SFHS => 
-	-- 			result <= SFHS_result;
-	-- 		when others =>
-	-- 			null;
-	-- 	end case;
-	-- end process;
-	
 
 end R3_instruction;

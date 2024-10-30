@@ -8261,3 +8261,816 @@ run
 # EXECUTION:: NOTE   : [R3] testing AU
 # EXECUTION:: Time: 6 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
 # EXECUTION:: NOTE   : [R3] testing CNT1H
+# EXECUTION:: Time: 7 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AHS
+# EXECUTION:: Time: 8 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AND
+# EXECUTION:: Time: 9 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing BCW
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MAXWS
+# EXECUTION:: Time: 11 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MINWS
+# EXECUTION:: Time: 12 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHU
+# EXECUTION:: Time: 13 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHCU
+# EXECUTION:: Time: 14 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing OR
+# EXECUTION:: Time: 15 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing CLZH
+# EXECUTION:: Time: 16 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing RLH
+# EXECUTION:: Time: 17 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: ERROR  : [R3] RLH test failed, expected 0x011C0008 0x0194000C 0x011C0010 0x01940010, got 091800100C8C00100918000C0C8C0008
+# EXECUTION:: Time: 18 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SFWU
+# EXECUTION:: Time: 18 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SFHS
+# EXECUTION:: Time: 19 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : Testbench finished
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# RUNTIME: Info: RUNTIME_0141 tb_ALU_top_level.vhd (219): stop called.
+# KERNEL: Time: 20 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# KERNEL: Stopped at time 20 ns + 0.
+# VSIM: 27 object(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6817 kB (elbread=427 elab2=6218 kernel=171 sdf=0)
+# KERNEL: ASDB file was created in location \\Mac\Home\Documents\SBU_2024_Fall\ESE345\ese345_project\ese345_project\MIPS\src\wave.asdb
+#  2:33 PM, Wednesday, October 30, 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to '//Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb'.
+run
+acom -dbg -e 100 -work MIPS -2008  $dsn/src/R3_instruction.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6817 kB (elbread=427 elab2=6218 kernel=171 sdf=0)
+# KERNEL: ASDB file was created in location \\Mac\Home\Documents\SBU_2024_Fall\ESE345\ese345_project\ese345_project\MIPS\src\wave.asdb
+#  2:33 PM, Wednesday, October 30, 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to '//Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb'.
+run
+# EXECUTION:: NOTE   : Testbench start
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : initializing inputs
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type,  Process: line__60.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__61.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__70.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__79.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__88.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__60.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__69.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__87.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__79.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__80.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__81.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__82.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__83.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__84.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__85.
+# EXECUTION:: NOTE   : Initialize done
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : Li instruction testbench starting...
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : R4 instruction testbench starting...
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : R3 instruction testbench starting...
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing nop
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SLHI
+# EXECUTION:: Time: 5 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AU
+# EXECUTION:: Time: 6 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing CNT1H
+# EXECUTION:: Time: 7 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AHS
+# EXECUTION:: Time: 8 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AND
+# EXECUTION:: Time: 9 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing BCW
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MAXWS
+# EXECUTION:: Time: 11 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MINWS
+# EXECUTION:: Time: 12 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHU
+# EXECUTION:: Time: 13 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHCU
+# EXECUTION:: Time: 14 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing OR
+# EXECUTION:: Time: 15 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing CLZH
+# EXECUTION:: Time: 16 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing RLH
+# EXECUTION:: Time: 17 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: ERROR  : [R3] RLH test failed, expected 0x011C0008 0x0194000C 0x011C0010 0x01940010, got 091800100C8C00100918000C0C8C0008
+# EXECUTION:: Time: 18 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SFWU
+# EXECUTION:: Time: 18 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SFHS
+# EXECUTION:: Time: 19 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : Testbench finished
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# RUNTIME: Info: RUNTIME_0141 tb_ALU_top_level.vhd (219): stop called.
+# KERNEL: Time: 20 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# KERNEL: Stopped at time 20 ns + 0.
+acom -dbg -e 100 -work MIPS -2008  $dsn/src/RLH.vhd
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6817 kB (elbread=427 elab2=6218 kernel=171 sdf=0)
+# KERNEL: ASDB file was created in location \\Mac\Home\Documents\SBU_2024_Fall\ESE345\ese345_project\ese345_project\MIPS\src\wave.asdb
+#  2:46 PM, Wednesday, October 30, 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to '//Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/a_hw_index7 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/a_hw_index6 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/a_hw_index5 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/a_hw_index4 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/a_hw_index3 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/a_hw_index2 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/a_hw_index1 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/a_hw_index0 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/b_shamt_index7 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/b_shamt_index6 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/b_shamt_index5 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/b_shamt_index4 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/b_shamt_index3 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/b_shamt_index2 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/b_shamt_index1 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/b_shamt_index0 not found in //Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb.
+run
+# EXECUTION:: NOTE   : Testbench start
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : initializing inputs
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type,  Process: line__60.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__61.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__70.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__79.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__88.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__60.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__69.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__87.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__79.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__80.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__81.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__82.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__83.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__84.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__85.
+# EXECUTION:: NOTE   : Initialize done
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : Li instruction testbench starting...
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : R4 instruction testbench starting...
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : R3 instruction testbench starting...
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing nop
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SLHI
+# EXECUTION:: Time: 5 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AU
+# EXECUTION:: Time: 6 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing CNT1H
+# EXECUTION:: Time: 7 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AHS
+# EXECUTION:: Time: 8 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AND
+# EXECUTION:: Time: 9 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing BCW
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MAXWS
+# EXECUTION:: Time: 11 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MINWS
+# EXECUTION:: Time: 12 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHU
+# EXECUTION:: Time: 13 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHCU
+# EXECUTION:: Time: 14 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing OR
+# EXECUTION:: Time: 15 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing CLZH
+# EXECUTION:: Time: 16 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing RLH
+# EXECUTION:: Time: 17 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: ERROR  : [R3] RLH test failed, expected 0x011C0008 0x0194000C 0x011C0010 0x01940010, got 091800081190000C0918001011900010
+# EXECUTION:: Time: 18 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SFWU
+# EXECUTION:: Time: 18 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SFHS
+# EXECUTION:: Time: 19 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : Testbench finished
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# RUNTIME: Info: RUNTIME_0141 tb_ALU_top_level.vhd (219): stop called.
+# KERNEL: Time: 20 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# KERNEL: Stopped at time 20 ns + 0.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/input_a" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/input_b" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/output_result" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index7" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index6" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index5" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index4" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index3" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index0" has already been traced.
+# VSIM: 16 object(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6817 kB (elbread=427 elab2=6218 kernel=171 sdf=0)
+# KERNEL: ASDB file was created in location \\Mac\Home\Documents\SBU_2024_Fall\ESE345\ese345_project\ese345_project\MIPS\src\wave.asdb
+#  2:47 PM, Wednesday, October 30, 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to '//Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb'.
+run
+# EXECUTION:: NOTE   : Testbench start
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : initializing inputs
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type,  Process: line__60.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__61.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__70.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__79.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__88.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__60.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__69.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__87.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__79.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__80.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__81.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__82.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__83.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__84.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__85.
+# EXECUTION:: NOTE   : Initialize done
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : Li instruction testbench starting...
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : R4 instruction testbench starting...
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : R3 instruction testbench starting...
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing nop
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SLHI
+# EXECUTION:: Time: 5 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AU
+# EXECUTION:: Time: 6 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing CNT1H
+# EXECUTION:: Time: 7 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AHS
+# EXECUTION:: Time: 8 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AND
+# EXECUTION:: Time: 9 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing BCW
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MAXWS
+# EXECUTION:: Time: 11 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MINWS
+# EXECUTION:: Time: 12 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHU
+# EXECUTION:: Time: 13 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHCU
+# EXECUTION:: Time: 14 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing OR
+# EXECUTION:: Time: 15 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing CLZH
+# EXECUTION:: Time: 16 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing RLH
+# EXECUTION:: Time: 17 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: ERROR  : [R3] RLH test failed, expected 0x011C0008 0x0194000C 0x011C0010 0x01940010, got 091800081190000C0918001011900010
+# EXECUTION:: Time: 18 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SFWU
+# EXECUTION:: Time: 18 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SFHS
+# EXECUTION:: Time: 19 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : Testbench finished
+# EXECUTION:: Time: 20 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# RUNTIME: Info: RUNTIME_0141 tb_ALU_top_level.vhd (219): stop called.
+# KERNEL: Time: 20 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# KERNEL: Stopped at time 20 ns + 0.
+endsim
+# VSIM: Simulation has finished.
+acom -dbg -e 100 -work MIPS -2008  $dsn/src/R3_instruction.vhd $dsn/src/op_package.vhd $dsn/src/CLZ.vhd $dsn/src/AHS.vhd $dsn/src/CNT1H.vhd $dsn/src/SFHS.vhd $dsn/src/MAXWS.vhd $dsn/src/MINWS.vhd $dsn/src/MLHCU.vhd $dsn/src/RLH.vhd $dsn/src/ALU_top_level.vhd $dsn/src/load_instruction.vhd $dsn/src/tb_ALU_top_level.vhd
+# Compile Entity "R3_instruction"
+# Compile Architecture "R3_instruction" of Entity "R3_instruction"
+# Compile Package "op_package"
+# Compile Entity "CLZ"
+# Compile Architecture "CLZ" of Entity "CLZ"
+# Compile Entity "AHS"
+# Compile Architecture "AHS" of Entity "AHS"
+# Compile Entity "CNT1H"
+# Compile Architecture "CNT1H" of Entity "CNT1H"
+# Compile Entity "SFHS"
+# Compile Architecture "SFHS" of Entity "SFHS"
+# Compile Entity "MAXWS"
+# Compile Architecture "MAXWS" of Entity "MAXWS"
+# Compile Entity "MINWS"
+# Compile Architecture "MINWS" of Entity "MINWS"
+# Compile Entity "MLHCU"
+# Compile Architecture "MLHCU" of Entity "MLHCU"
+# Compile Entity "RLH"
+# Compile Architecture "RLH" of Entity "RLH"
+# Compile Entity "ALU_top_level"
+# Compile Architecture "ALU_top_level" of Entity "ALU_top_level"
+# Compile Entity "load_instruction"
+# Compile Architecture "behavioral" of Entity "load_instruction"
+# Compile Entity "tb_ALU_top_level"
+# Compile Architecture "tb_ALU_top_level" of Entity "tb_ALU_top_level"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+asim -O5 +access +r +m+tb_alu_top_level tb_alu_top_level tb_alu_top_level
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6817 kB (elbread=427 elab2=6218 kernel=171 sdf=0)
+# KERNEL: ASDB file was created in location \\Mac\Home\Documents\SBU_2024_Fall\ESE345\ese345_project\ese345_project\MIPS\src\wave.asdb
+#  2:55 PM, Wednesday, October 30, 2024
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to '//Mac/Home/Documents/SBU_2024_Fall/ESE345/ese345_project/ese345_project/MIPS/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/input_a" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/input_b" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/output_result" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index7" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index6" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index5" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index4" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index3" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index2" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index1" has already been traced.
+# KERNEL: Warning: KERNEL_0291 Object "/tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module/result_hw_index0" has already been traced.
+run
+# EXECUTION:: NOTE   : Testbench start
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : initializing inputs
+# EXECUTION:: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type,  Process: line__60.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/AHS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/SFHS_module,  Process: line__101.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__61.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__70.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__79.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MAXWS_module,  Process: line__88.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__60.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__69.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/MINWS_module,  Process: line__87.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__78.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__79.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__80.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__81.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__82.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__83.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__84.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /tb_ALU_top_level/ALU_top_level_inst/R3_type/RLH_module,  Process: line__85.
+# EXECUTION:: NOTE   : Initialize done
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : Li instruction testbench starting...
+# EXECUTION:: Time: 1 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : R4 instruction testbench starting...
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : R3 instruction testbench starting...
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing nop
+# EXECUTION:: Time: 4 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing SLHI
+# EXECUTION:: Time: 5 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AU
+# EXECUTION:: Time: 6 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing CNT1H
+# EXECUTION:: Time: 7 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AHS
+# EXECUTION:: Time: 8 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing AND
+# EXECUTION:: Time: 9 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing BCW
+# EXECUTION:: Time: 10 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MAXWS
+# EXECUTION:: Time: 11 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MINWS
+# EXECUTION:: Time: 12 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHU
+# EXECUTION:: Time: 13 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing MLHCU
+# EXECUTION:: Time: 14 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing OR
+# EXECUTION:: Time: 15 ns,  Iteration: 0,  Instance: /tb_ALU_top_level,  Process: Li_tb.
+# EXECUTION:: NOTE   : [R3] testing CLZH
+# EXECUTION:: Time: 16 ns,  Iteration: 0,
