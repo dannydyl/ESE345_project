@@ -35,7 +35,8 @@ end ALU_top_level;
 architecture ALU_top_level of ALU_top_level is
 	signal instr_type : std_logic_vector(1 downto 0); -- determine the type of instruction Li type, R4 type, R3 type
 	signal R3_output_result : std_logic_vector(127 downto 0);	  
-	signal Li_output_result : std_logic_vector(127 downto 0);
+	signal Li_output_result : std_logic_vector(127 downto 0);						
+	signal R4_output_result : std_logic_vector(127 downto 0);
 begin
 
 	-- include the type of instruction
@@ -43,11 +44,10 @@ begin
 	-- Li type
 	li_type : entity work.load_instruction
 		port map(
-			rs1 => input_a,
-			rs2 => input_b,
-			rs3 => input_c,
-			instruction => instr,
-			rd => Li_output_result
+			old_rd => input_a,
+			load_index => instr(8 downto 6),
+			immediate => imme,
+			new_rd => Li_output_result
 		);
 	-- R4 type
 
@@ -58,22 +58,27 @@ begin
 			b => input_b,
 			opcode => instr(7 downto 0),
 			imme => imme(9 downto 5),
-			output_result => R3_output_result
+			result => R3_output_result
 		);
 
 
-	instr_type <= instr(9 downto 8);
-	process(all)
-	begin
-		if (instr_type(1)) then
-			output_result <= Li_output_result;
-		else
-			if(instr_type = "10") then
-				-- R4 type
-			elsif(instr_type = "11") then
-				output_result <= R3_output_result;
-			end if;
-		end if;
-	end process;
+	instr_type <= instr(9 downto 8);	
+	
+	with instr_type select
+	output_result <= R4_output_result when "10",
+					 R3_output_result when "11",
+					 Li_output_result when others;
+--	process(all)
+--	begin
+--		if (instr_type(1)) then
+--			output_result <= Li_output_result;
+--		else
+--			if(instr_type = "10") then
+--				-- R4 type
+--			elsif(instr_type = "11") then
+--				output_result <= R3_output_result;
+--			end if;
+--		end if;
+--	end process;
 
 end ALU_top_level;

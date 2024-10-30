@@ -64,8 +64,9 @@ begin
 	output_count <= count_index7 & count_index6 & count_index5 & count_index4 & count_index3 & count_index2 & count_index1 & count_index0;
 
 	process(input_hw_index7)
-	variable count_zeros : integer := 0;
+	variable count_zeros : integer;
 	begin
+		count_zeros := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index7(i) = '0' then
 				count_zeros := count_zeros + 1;
@@ -80,6 +81,7 @@ begin
 	process(input_hw_index6)
 	variable count_zeros : integer := 0;
 	begin
+		count_zeros := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index6(i) = '0' then
 				count_zeros := count_zeros + 1;
@@ -94,6 +96,7 @@ begin
 	process(input_hw_index5)
 	variable count_zeros : integer := 0;
 	begin
+		count_zeros := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index5(i) = '0' then
 				count_zeros := count_zeros + 1;
@@ -109,6 +112,7 @@ begin
 	process(input_hw_index4)
 	variable count_zeros : integer := 0;
 	begin
+		count_zeros := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index4(i) = '0' then
 				count_zeros := count_zeros + 1;
@@ -124,6 +128,7 @@ begin
 	process(input_hw_index3)
 	variable count_zeros : integer := 0;
 	begin
+		count_zeros := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index3(i) = '0' then
 				count_zeros := count_zeros + 1;
@@ -139,6 +144,7 @@ begin
 	process(input_hw_index2)
 	variable count_zeros : integer := 0;
 	begin
+		count_zeros := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index2(i) = '0' then
 				count_zeros := count_zeros + 1;
@@ -154,6 +160,7 @@ begin
 	process(input_hw_index1)
 	variable count_zeros : integer := 0;
 	begin
+		count_zeros := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index1(i) = '0' then
 				count_zeros := count_zeros + 1;
@@ -169,6 +176,7 @@ begin
 	process(input_hw_index0)
 	variable count_zeros : integer := 0;
 	begin
+		count_zeros := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index0(i) = '0' then
 				count_zeros := count_zeros + 1;

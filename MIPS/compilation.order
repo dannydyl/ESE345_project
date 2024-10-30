@@ -8,8 +8,6 @@
 .\src\MINWS.vhd
 .\src\MLHCU.vhd
 .\src\RLH.vhd
-.\src\li_instr_testbench.vhd
-.\src\R4_intsr_testbench.vhd
 .\src\ALU_top_level.vhd
 .\src\load_instruction.vhd
 .\src\tb_ALU_top_level.vhd

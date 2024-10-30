@@ -8,24 +8,20 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 entity load_instruction is
-	port(
-		instruction : in STD_LOGIC_VECTOR(24 downto 0); 
-		rd : inout STD_LOGIC_VECTOR(127 downto 0)
+	port(					 
+		old_rd : in STD_LOGIC_VECTOR(127 downto 0); -- get this from input_a in ALU_top_level
+		load_index : in STD_LOGIC_VECTOR(2 downto 0); 
+		immediate : in STD_LOGIC_VECTOR(15 downto 0);
+		new_rd : out STD_LOGIC_VECTOR(127 downto 0)
 	);
 end load_instruction;
 
 architecture behavioral of load_instruction is	   
 begin
 	process(all)
-	variable immediate: std_logic_vector(15 downto 0);
-	variable load_index: std_logic_vector(2 downto 0);
 	variable temp_reg: std_logic_vector(127 downto 0);	   
 	begin
-		immediate := instruction(20 downto 5);
-		load_index := instruction(23 downto 21);
-		temp_reg := rd;
-		if (instruction(24) = '0') then
-			--load immediate instruction
+		temp_reg := old_rd;
 			case load_index is
 				when "000" => temp_reg(15 downto 0) := immediate;
 				when "001" => temp_reg(31 downto 16) := immediate;
@@ -37,7 +33,6 @@ begin
 				when "111" => temp_reg(127 downto 112) := immediate;
 				when others => null;
 			end case;
-			rd <= temp_reg;
-		end if;
+			new_rd <= temp_reg;
 	end process;
 end behavioral;

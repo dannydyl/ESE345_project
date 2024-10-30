@@ -8,8 +8,6 @@ i<>.\src\MAXWS.vhd
 i<>.\src\MINWS.vhd
 i<>.\src\MLHCU.vhd
 i<>.\src\RLH.vhd
-i<>.\src\li_instr_testbench.vhd
-i<>.\src\R4_intsr_testbench.vhd
 i<>.\src\ALU_top_level.vhd
 i<>.\src\load_instruction.vhd
 i<>.\src\tb_ALU_top_level.vhd

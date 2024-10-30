@@ -1,0 +1,47 @@
+Active-HDL 15.0.261.9132 2024-10-30 01:52:50
+
+Elaboration top modules:
+Architecture                  tb_ALU_top_level(tb_ALU_top_level)
+
+
+-------------------------------------------------------------------------------------------------------
+Entity           | Architecture     | Library | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------------------
+tb_ALU_top_level | tb_ALU_top_level | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+ALU_top_level    | ALU_top_level    | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+load_instruction | behavioral       | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+R3_instruction   | R3_instruction   | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+CLZ              | CLZ              | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+AHS              | AHS              | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+CNT1H            | CNT1H            | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+SFHS             | SFHS             | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+MAXWS            | MAXWS            | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+MINWS            | MINWS            | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+MLHCU            | MLHCU            | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+RLH              | RLH              | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+-------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------
+VHDL Package                        | Library | Info | Compiler Version          | Compilation Options
+-------------------------------------------------------------------------------------------------------
+standard                            | std     |      |                           | <unavailable>
+TEXTIO                              | std     |      | 15.0.261.9132 (Windows64) |  -2019
+std_logic_1164                      | ieee    |      | 15.0.261.9132 (Windows64) |  -2008
+ENV                                 | std     |      | 15.0.261.9132 (Windows64) |  -2019
+NUMERIC_STD                         | ieee    |      | 15.0.261.9132 (Windows64) |  -2008
+op_package                          | MIPS    |      | 15.0.261.9132 (Windows64) | -O3 -2008
+-------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------
+Library                             | Comment
+-------------------------------------------------------------------------------------------------------
+ieee                                | Standard IEEE packages library
+MIPS                                | None
+std                                 | Standard VHDL library
+-------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+tb_alu_top_level tb_alu_top_level tb_alu_top_level
+
+
+The performance of simulation is reduced. Version Student Edition
