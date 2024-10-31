@@ -33,42 +33,6 @@ entity AHS is
 end AHS;
 
 architecture AHS of AHS is
-	-- signal a_long_index7 : std_logic_vector(31 downto 0);
-	-- signal a_long_index6 : std_logic_vector(31 downto 0);
-	-- signal a_long_index5 : std_logic_vector(31 downto 0);
-	-- signal a_long_index4 : std_logic_vector(31 downto 0);
-	-- signal a_long_index3 : std_logic_vector(31 downto 0);
-	-- signal a_long_index2 : std_logic_vector(31 downto 0);
-	-- signal a_long_index1 : std_logic_vector(31 downto 0);
-	-- signal a_long_index0 : std_logic_vector(31 downto 0);
-
-	-- signal b_long_index7 : std_logic_vector(31 downto 0);
-	-- signal b_long_index6 : std_logic_vector(31 downto 0);
-	-- signal b_long_index5 : std_logic_vector(31 downto 0);
-	-- signal b_long_index4 : std_logic_vector(31 downto 0);
-	-- signal b_long_index3 : std_logic_vector(31 downto 0);
-	-- signal b_long_index2 : std_logic_vector(31 downto 0);
-	-- signal b_long_index1 : std_logic_vector(31 downto 0);
-	-- signal b_long_index0 : std_logic_vector(31 downto 0);
-
-	-- signal result_long_index7 : std_logic_vector(31 downto 0);
-	-- signal result_long_index6 : std_logic_vector(31 downto 0);
-	-- signal result_long_index5 : std_logic_vector(31 downto 0);
-	-- signal result_long_index4 : std_logic_vector(31 downto 0);
-	-- signal result_long_index3 : std_logic_vector(31 downto 0);
-	-- signal result_long_index2 : std_logic_vector(31 downto 0);
-	-- signal result_long_index1 : std_logic_vector(31 downto 0);
-	-- signal result_long_index0 : std_logic_vector(31 downto 0);
-
-	-- signal result_index7 : std_logic_vector(15 downto 0);
-	-- signal result_index6 : std_logic_vector(15 downto 0);
-	-- signal result_index5 : std_logic_vector(15 downto 0);
-	-- signal result_index4 : std_logic_vector(15 downto 0);
-	-- signal result_index3 : std_logic_vector(15 downto 0);
-	-- signal result_index2 : std_logic_vector(15 downto 0);
-	-- signal result_index1 : std_logic_vector(15 downto 0);
-	-- signal result_index0 : std_logic_vector(15 downto 0);
-
 	constant MAX : integer := 32767;
 	constant MIN : integer := -32768;
 	constant MAX_result : std_logic_vector(31 downto 0) := X"00007FFF";

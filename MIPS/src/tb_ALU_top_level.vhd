@@ -436,14 +436,19 @@ begin
 
 			report "[R3] testing SFHS"; -- subtract from halfword saturated
 			instr <= "1100001111";
-			input_rs2 <= x"0123a100" & x"03230005" & x"01230003" & x"03230004"; -- [rs2] each field is 32 bits
-			input_rs1 <= x"0123FFFF" & x"02320003" & x"01230002" & x"02320001"; -- [rs1]
+			input_rs2 <= x"01230100" & x"03230005" & x"01230003" & x"03230004"; -- [rs2] each field is 32 bits
+			input_rs1 <= x"01238000" & x"02320003" & x"01230002" & x"02320001"; -- [rs1]
 			wait for 1 ns;
 			assert output_result <= x"00008000" & x"00F10002" & x"00000001" & x"00F10003"
 			report "[R3] SFHS test failed, expected 0x00008000 0x00F10002 0x00000001 0x00F10003, got " & to_hstring(output_result)
 			severity error;
-
+			wait for 1 ns;
 			report "Testbench finished";
+
+			instr <= "1100000000";
+			input_rs1 <= x"00000000_00000000_00000000_00000000";
+			input_rs2 <= x"00000000_00000000_00000000_00000000";
+			wait for 1 ns;
 			std.env.stop;
 		end process;
 
