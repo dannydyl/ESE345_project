@@ -28,12 +28,11 @@ use work.op_package.all;
 
 entity R3_instruction is	 
 	port(									   
-	opcode : in std_logic_vector(7 downto 0); -- [22:15] from R3 instruction
-	imme : in std_logic_vector(4 downto 0); -- [14:10] rs2 field in R3 instruction
-	a : in std_logic_vector(127 downto 0); -- from rs2
-	b : in std_logic_vector(127 downto 0); -- from rs1
-	result : out std_logic_vector(127 downto 0) -- goes to rd
-	
+		opcode : in std_logic_vector(7 downto 0); -- [22:15] from R3 instruction
+		imme : in std_logic_vector(4 downto 0); -- [14:10] rs2 field in R3 instruction
+		a : in std_logic_vector(127 downto 0); -- from rs2
+		b : in std_logic_vector(127 downto 0); -- from rs1
+		result : out std_logic_vector(127 downto 0) -- goes to rd
 	);
 end R3_instruction;
 
@@ -58,14 +57,14 @@ begin
 	-- prerequisite for operations
 	current_op <= opcode(3 downto 0);
 	shamt <= to_integer(unsigned(imme(3 downto 0)));
-	SLHI_result <= std_logic_vector(shift_left(unsigned(a(127 downto 112)), shamt)) &
-									std_logic_vector(shift_left(unsigned(a(111 downto 96)), shamt)) &
-									std_logic_vector(shift_left(unsigned(a(95 downto 80)), shamt)) &
-									std_logic_vector(shift_left(unsigned(a(79 downto 64)), shamt)) &
-									std_logic_vector(shift_left(unsigned(a(63 downto 48)), shamt)) &
-									std_logic_vector(shift_left(unsigned(a(47 downto 32)), shamt)) &
-									std_logic_vector(shift_left(unsigned(a(31 downto 16)), shamt)) &
-									std_logic_vector(shift_left(unsigned(a(15 downto 0)), shamt));
+	SLHI_result <= std_logic_vector(shift_left(unsigned(b(127 downto 112)), shamt)) &
+									std_logic_vector(shift_left(unsigned(b(111 downto 96)), shamt)) &
+									std_logic_vector(shift_left(unsigned(b(95 downto 80)), shamt)) &
+									std_logic_vector(shift_left(unsigned(b(79 downto 64)), shamt)) &
+									std_logic_vector(shift_left(unsigned(b(63 downto 48)), shamt)) &
+									std_logic_vector(shift_left(unsigned(b(47 downto 32)), shamt)) &
+									std_logic_vector(shift_left(unsigned(b(31 downto 16)), shamt)) &
+									std_logic_vector(shift_left(unsigned(b(15 downto 0)), shamt));
 
 	AU_result <= std_logic_vector(unsigned(a(127 downto 96)) + unsigned(b(127 downto 96))) &
 								std_logic_vector(unsigned(a(95 downto 64)) + unsigned(b(95 downto 64))) &
@@ -87,7 +86,7 @@ begin
 	-- external modules
 	CLZH_module : entity work.CLZ
 		port map(
-			input_hw => a,
+			input_hw => b,
 			output_count => CLZ_result
 		);
 
@@ -100,7 +99,7 @@ begin
 
 	CNT1H_module: entity work.CNT1H
 		port map(
-			input_hw => a,
+			input_hw => b,
 			output_count => CNT1H_result
 		);
 
@@ -127,7 +126,7 @@ begin
 
 	MLHCU_module: entity work.MLHCU
 		port map(
-			input_a => a,
+			input_a => b,
 			input_const => imme,
 			output_result => MLHCU_result
 		);

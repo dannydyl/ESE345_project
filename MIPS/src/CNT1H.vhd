@@ -59,6 +59,7 @@ begin
 	process(input_hw_index7)
 	variable count : integer := 0;
   begin
+		count := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index7(i) = '1' then
 				count := count + 1;
@@ -70,6 +71,7 @@ begin
 	process(input_hw_index6)
 	variable count : integer := 0;
   begin
+		count := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index6(i) = '1' then
 				count := count + 1;
@@ -81,6 +83,7 @@ begin
 	process(input_hw_index5)
 	variable count : integer := 0;
   	begin
+		count := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index5(i) = '1' then
 				count := count + 1;
@@ -92,6 +95,7 @@ begin
 	process(input_hw_index4)
 	variable count : integer := 0;
 	begin
+		count := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index4(i) = '1' then
 				count := count + 1;
@@ -103,6 +107,7 @@ begin
 	process(input_hw_index3)
 	variable count : integer := 0;
 	begin
+		count := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index3(i) = '1' then
 				count := count + 1;
@@ -114,6 +119,7 @@ begin
 	process(input_hw_index2)
 	variable count : integer := 0;
 	begin
+		count := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index2(i) = '1' then
 				count := count + 1;
@@ -125,6 +131,7 @@ begin
 	process(input_hw_index1)
 	variable count : integer := 0;
 	begin
+		count := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index1(i) = '1' then
 				count := count + 1;
@@ -136,6 +143,7 @@ begin
 	process(input_hw_index0)
 	variable count : integer := 0;
 	begin
+		count := 0;
 		for i in 15 downto 0 loop
 			if input_hw_index0(i) = '1' then
 				count := count + 1;

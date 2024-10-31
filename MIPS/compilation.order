@@ -11,3 +11,12 @@
 .\src\ALU_top_level.vhd
 .\src\load_instruction.vhd
 .\src\tb_ALU_top_level.vhd
+.\src\R4_instruction.vhd
+.\src\Signed_Long_Integer_Multiply_Subtract_Low_w_Saturation.vhd
+.\src\Signed_Long_Integer_Multiply_Subtract_High_w_Saturation.vhd
+.\src\Signed_Long_Integer_Multiply_Add_High_w_Saturation.vhd
+.\src\Signed_Long_Integer_Multiply_Add_Low_w_Saturation.vhd
+.\src\Signed_Integer_Multiply_Subtract_High_w_Saturation.vhd
+.\src\Signed_Integer_Multiply_Subtract_Low_w_Saturation.vhd
+.\src\Signed Integer Multiply-ADD LOW with Saturation.vhd
+.\src\Signed_Integer_Multiply_Add_High_w_Saturation.vhd

@@ -14,7 +14,7 @@
 --
 -------------------------------------------------------------------------------
 --
--- Description : 
+-- Description : Compiled with VHDL2009 
 --
 -------------------------------------------------------------------------------
 library ieee;
@@ -23,9 +23,9 @@ use ieee.numeric_std.all;
 
 entity ALU_top_level is
 	port(
-		input_a : in std_logic_vector(127 downto 0);
-		input_b : in std_logic_vector(127 downto 0);
-		input_c : in std_logic_vector(127 downto 0);
+		input_rs3 : in std_logic_vector(127 downto 0); -- from rs3
+		input_rs2 : in std_logic_vector(127 downto 0); -- from rs2 
+		input_rs1 : in std_logic_vector(127 downto 0); -- from rs1
 		instr : in std_logic_vector(9 downto 0);
 		imme  : in std_logic_vector(15 downto 0);
 		output_result : out std_logic_vector(127 downto 0)
@@ -39,25 +39,32 @@ architecture ALU_top_level of ALU_top_level is
 	signal R4_output_result : std_logic_vector(127 downto 0);
 begin
 
-	-- include the type of instruction
-
 	-- Li type
 	li_type : entity work.load_instruction
 		port map(
-			old_rd => input_a,
+			old_rd => input_rs1, -- take R[rd] from rs1 port
 			load_index => instr(8 downto 6),
 			immediate => imme,
 			new_rd => Li_output_result
 		);
+
 	-- R4 type
+	R4_type : entity work.R4_instruction
+		port map(
+			rs1 => input_rs1,
+			rs2 => input_rs2,
+			rs3 => input_rs3,
+			opcode => instr(7 downto 5), -- [22:20] from the full instruction
+			rd_out => R4_output_result
+		);
 
 	-- R3 type
 	R3_type : entity work.R3_instruction
 		port map(
-			a => input_a,
-			b => input_b,
+			a => input_rs2,
+			b => input_rs1,
 			opcode => instr(7 downto 0),
-			imme => imme(9 downto 5),
+			imme => imme(9 downto 5), -- for rs2 bit field immediate value
 			result => R3_output_result
 		);
 
@@ -68,17 +75,5 @@ begin
 	output_result <= R4_output_result when "10",
 					 R3_output_result when "11",
 					 Li_output_result when others;
---	process(all)
---	begin
---		if (instr_type(1)) then
---			output_result <= Li_output_result;
---		else
---			if(instr_type = "10") then
---				-- R4 type
---			elsif(instr_type = "11") then
---				output_result <= R3_output_result;
---			end if;
---		end if;
---	end process;
 
 end ALU_top_level;
