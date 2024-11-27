@@ -25,8 +25,19 @@ entity ID_EX_Reg is
 	port(
 		clk : in std_logic;
 		rst : in std_logic;
-		instruction_in : in std_logic_vector(24 downto 0);
-		instruction_out : out std_logic_vector(24 downto 0)
+		instr_opcode_in : in std_logic_vector(9 downto 0);
+		instr_imme_in : in std_logic_vector(15 downto 0);
+		instr_rd_in : in std_logic_vector(4 downto 0);
+		rs1_data_in : in std_logic_vector(127 downto 0);
+		rs2_data_in : in std_logic_vector(127 downto 0);
+		rs3_data_in : in std_logic_vector(127 downto 0);
+		
+		instr_opcode_out : out std_logic_vector(9 downto 0);
+		instr_imme_out : out std_logic_vector(15 downto 0);
+		instr_rd_out : out std_logic_vector(4 downto 0);
+		rs1_data_out : out std_logic_vector(127 downto 0);
+		rs2_data_out : out std_logic_vector(127 downto 0);
+		rs3_data_out : out std_logic_vector(127 downto 0)
 	);
 end ID_EX_Reg;
 
