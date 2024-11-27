@@ -40,6 +40,11 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 /Signed_Integer_Multiply_Subtract_Low_w_Saturation.vhd=-1
 /Signed Integer Multiply-ADD LOW with Saturation.vhd=-1
 /Signed_Integer_Multiply_Add_High_w_Saturation.vhd=-1
+/tb_wavelength.asdb=-1
+/tb_wavelength.awc=-1
+/instruction_buffer.vhd=-1
+/IF_ID_Reg.vhd=-1
+/ID_EX_Reg.vhd=-1
 [Files.Data]
 .\src\R3_instruction.vhd=VHDL Source Code
 .\src\op_package.vhd=VHDL Source Code
@@ -63,6 +68,11 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 .\src\Signed_Integer_Multiply_Subtract_Low_w_Saturation.vhd=VHDL Source Code
 .\src\Signed Integer Multiply-ADD LOW with Saturation.vhd=VHDL Source Code
 .\src\Signed_Integer_Multiply_Add_High_w_Saturation.vhd=VHDL Source Code
+.\src\tb_wavelength.asdb=Accelerated Waveform File
+.\src\tb_wavelength.awc=Accelerated Waveform Configuration
+.\src\instruction_buffer.vhd=VHDL Source Code
+.\src\IF_ID_Reg.vhd=VHDL Source Code
+.\src\ID_EX_Reg.vhd=VHDL Source Code
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0

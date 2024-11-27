@@ -1,4 +1,4 @@
-Active-HDL 15.0.261.9132 2024-10-31 19:09:48
+Active-HDL 15.0.261.9132 2024-11-26 21:54:45
 
 Elaboration top modules:
 Architecture                  tb_ALU_top_level(tb_ALU_top_level)
@@ -7,27 +7,27 @@ Architecture                  tb_ALU_top_level(tb_ALU_top_level)
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Entity                                                  | Architecture     | Library | Info | Compiler Version          | Compilation Options
 ----------------------------------------------------------------------------------------------------------------------------------------------
-tb_ALU_top_level                                        | tb_ALU_top_level | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-ALU_top_level                                           | ALU_top_level    | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-load_instruction                                        | behavioral       | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-R4_instruction                                          | R4_instruction   | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-R3_instruction                                          | R3_instruction   | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-Signed_Integer_Multiply_ADD_LOW_w_Saturation            | behavioral       | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-Signed_Integer_Multiply_Add_High_w_Saturation           | behavior         | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-Signed_Integer_Multiply_Subtract_Low_w_Saturation       | behavioral       | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-Signed_Integer_Multiply_Subtract_High_w_Saturation      | behavioral       | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-Signed_Long_Integer_Multiply_Add_Low_w_Saturation       | behavioral       | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-Signed_Long_Integer_Multiply_Add_High_w_Saturation      | behavioral       | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-Signed_Long_Integer_Multiply_Subtract_Low_w_Saturation  | behavioral       | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-Signed_Long_Integer_Multiply_Subtract_High_w_Saturation | behavioral       | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-CLZ                                                     | CLZ              | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-AHS                                                     | AHS              | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-CNT1H                                                   | CNT1H            | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-SFHS                                                    | SFHS             | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-MAXWS                                                   | MAXWS            | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-MINWS                                                   | MINWS            | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-MLHCU                                                   | MLHCU            | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
-RLH                                                     | RLH              | MIPS    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+tb_ALU_top_level                                        | tb_ALU_top_level | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+ALU_top_level                                           | ALU_top_level    | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+load_instruction                                        | behavioral       | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+R4_instruction                                          | R4_instruction   | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+R3_instruction                                          | R3_instruction   | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+Signed_Integer_Multiply_ADD_LOW_w_Saturation            | behavioral       | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+Signed_Integer_Multiply_Add_High_w_Saturation           | behavior         | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+Signed_Integer_Multiply_Subtract_Low_w_Saturation       | behavioral       | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+Signed_Integer_Multiply_Subtract_High_w_Saturation      | behavioral       | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+Signed_Long_Integer_Multiply_Add_Low_w_Saturation       | behavioral       | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+Signed_Long_Integer_Multiply_Add_High_w_Saturation      | behavioral       | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+Signed_Long_Integer_Multiply_Subtract_Low_w_Saturation  | behavioral       | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+Signed_Long_Integer_Multiply_Subtract_High_w_Saturation | behavioral       | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+CLZ                                                     | CLZ              | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+AHS                                                     | AHS              | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+CNT1H                                                   | CNT1H            | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+SFHS                                                    | SFHS             | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+MAXWS                                                   | MAXWS            | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+MINWS                                                   | MINWS            | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+MLHCU                                                   | MLHCU            | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
+RLH                                                     | RLH              | mips    |      | 15.0.261.9132 (Windows64) | -dbg -2008
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -38,19 +38,13 @@ TEXTIO                                                                     | std
 std_logic_1164                                                             | ieee    |      | 15.0.261.9132 (Windows64) |  -2008
 ENV                                                                        | std     |      | 15.0.261.9132 (Windows64) |  -2019
 NUMERIC_STD                                                                | ieee    |      | 15.0.261.9132 (Windows64) |  -2008
-op_package                                                                 | MIPS    |      | 15.0.261.9132 (Windows64) | -O3 -2008
+op_package                                                                 | mips    |      | 15.0.261.9132 (Windows64) | -O3 -2008
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
 Library                                                                    | Comment
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ieee                                                                       | Standard IEEE packages library
-MIPS                                                                       | None
+mips                                                                       | None
 std                                                                        | Standard VHDL library
 ----------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+tb_alu_top_level tb_alu_top_level tb_alu_top_level
-
-
-The performance of simulation is reduced. Version Student Edition

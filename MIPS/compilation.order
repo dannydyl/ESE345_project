@@ -20,3 +20,6 @@
 .\src\Signed_Integer_Multiply_Subtract_Low_w_Saturation.vhd
 .\src\Signed Integer Multiply-ADD LOW with Saturation.vhd
 .\src\Signed_Integer_Multiply_Add_High_w_Saturation.vhd
+.\src\instruction_buffer.vhd
+.\src\IF_ID_Reg.vhd
+.\src\ID_EX_Reg.vhd
