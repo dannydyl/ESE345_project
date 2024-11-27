@@ -35,8 +35,12 @@ entity Register_file is
 		reg_read_addr3 : in std_logic_vector(31 downto 0);
 		reg_read_data1 : out std_logic_vector(127 downto 0);
 		reg_read_data2 : out std_logic_vector(127 downto 0);
-		reg_read_data3 : out std_logic_vector(127 downto 0)
+		reg_read_data3 : out std_logic_vector(127 downto 0);
 
+		instruction : in std_logic_vector(24 downto 0);
+		instr_opcode : out std_logic_vector(5 downto 0);
+		instr_imme : out std_logic_vector(15 downto 0);
+		instr_rd : out std_logic_vector(4 downto 0)
 
 	);
 end Register_file;
@@ -45,10 +49,9 @@ architecture Register_file of Register_file is
 	type register_file is array(0 to 31) of std_logic_vector(127 downto 0);
 	signal reg_file : register_file;
 begin
-	process(all)
-	begin
-
-	end process;	
+	instr_opcode <= instruction(24 downto 15);
+	instr_imme <= instruction(20 downto 5);
+	instr_rd <= instruction(4 downto 0);
 
 	process(clk, rst)
 	begin

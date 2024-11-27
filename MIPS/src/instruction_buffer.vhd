@@ -24,8 +24,8 @@ use ieee.numeric_std.all;
 entity instruction_buffer is
 	port(
 		clk : in std_logic;
+		rst : in std_logic;
 		load_en : in std_logic;
-		PC_in : in std_logic_vector(5 downto 0);
 		instruction_in : in std_logic_vector(24 downto 0);
 		instruction_out : out std_logic_vector(24 downto 0)
 	);
@@ -35,14 +35,22 @@ architecture behavioral of instruction_buffer is
 constant line_length : unsigned := 64;
 type instruction_buffer is array(0 to line_length-1) of std_logic_vector(24 downto 0);
 signal instr_buffer : instruction_buffer;
+signal PC_current : std_logic_vector(5 downto 0);
 begin
+
+	PC_inst : entity work.Program_Counter
+		port map(
+			clk => clk,
+			rst => rst,
+			PC_out => PC_current
+		);
 
 	-- loading instructions into instruction buffer
 	process(clk)
 	begin
 		if rising_edge(clk) then
 			if load_en = '1' then
-				instr_buffer(to_integer(unsigned(PC_in))) <= instruction_in;
+				instr_buffer(to_integer(unsigned(PC_current))) <= instruction_in;
 			end if;
 		end if;
 	end process;
@@ -51,7 +59,7 @@ begin
 	process(clk)
 	begin
 		if rising_edge(clk) then
-			instruction_out <= instr_buffer(to_integer(unsigned(PC_in)));
+			instruction_out <= instr_buffer(to_integer(unsigned(PC_current)));
 		end if;
 	end process;
 

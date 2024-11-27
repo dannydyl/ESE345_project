@@ -25,3 +25,4 @@
 .\src\ID_EX_Reg.vhd
 .\src\Program_Counter.vhd
 .\src\Register_file.vhd
+.\src\Processor_top_level.vhd
