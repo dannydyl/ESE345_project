@@ -32,7 +32,7 @@ entity instruction_buffer is
 end instruction_buffer;
 
 architecture behavioral of instruction_buffer is
-constant line_length : integer := 64;
+constant line_length : unsigned := 64;
 type instruction_buffer is array(0 to line_length-1) of std_logic_vector(24 downto 0);
 signal instr_buffer : instruction_buffer;
 begin

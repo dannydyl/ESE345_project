@@ -45,6 +45,8 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 /instruction_buffer.vhd=-1
 /IF_ID_Reg.vhd=-1
 /ID_EX_Reg.vhd=-1
+/Program_Counter.vhd=-1
+/Register_file.vhd=-1
 [Files.Data]
 .\src\R3_instruction.vhd=VHDL Source Code
 .\src\op_package.vhd=VHDL Source Code
@@ -73,6 +75,8 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 .\src\instruction_buffer.vhd=VHDL Source Code
 .\src\IF_ID_Reg.vhd=VHDL Source Code
 .\src\ID_EX_Reg.vhd=VHDL Source Code
+.\src\Program_Counter.vhd=VHDL Source Code
+.\src\Register_file.vhd=VHDL Source Code
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0

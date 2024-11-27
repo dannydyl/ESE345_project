@@ -23,3 +23,5 @@
 .\src\instruction_buffer.vhd
 .\src\IF_ID_Reg.vhd
 .\src\ID_EX_Reg.vhd
+.\src\Program_Counter.vhd
+.\src\Register_file.vhd
