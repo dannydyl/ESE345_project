@@ -26,3 +26,4 @@ i<>.\src\ID_EX_Reg.vhd
 i<>.\src\Program_Counter.vhd
 i<>.\src\Register_file.vhd
 i<>.\src\Processor_top_level.vhd
+i<>.\src\processor_top_testbench.vhd

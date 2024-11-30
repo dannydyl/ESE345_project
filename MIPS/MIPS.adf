@@ -48,6 +48,7 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 /Program_Counter.vhd=-1
 /Register_file.vhd=-1
 /Processor_top_level.vhd=-1
+/processor_top_testbench.vhd=-1
 [Files.Data]
 .\src\R3_instruction.vhd=VHDL Source Code
 .\src\op_package.vhd=VHDL Source Code
@@ -79,6 +80,7 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 .\src\Program_Counter.vhd=VHDL Source Code
 .\src\Register_file.vhd=VHDL Source Code
 .\src\Processor_top_level.vhd=VHDL Source Code
+.\src\processor_top_testbench.vhd=VHDL Source Code
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0
