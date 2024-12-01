@@ -59,8 +59,10 @@ begin
 	
 	read : process(reg_read_addr1, reg_read_addr2, reg_read_addr3, reg_write_addr)
 	begin
+		reg_read_data1 <= reg_file(to_integer(unsigned(reg_read_addr1)));
+		reg_read_data2 <= reg_file(to_integer(unsigned(reg_read_addr2)));
+		reg_read_data3 <= reg_file(to_integer(unsigned(reg_read_addr3)));
 		if reg_write_en = '1' then
-
 				-- if the register is being written and read at the sametime, bypass the data
 				if(reg_write_addr = reg_read_addr1) then
 					reg_read_data1 <= reg_write_data;
@@ -73,14 +75,10 @@ begin
 				if(reg_write_addr = reg_read_addr3) then
 					reg_read_data3 <= reg_write_data;
 				end if;
-		else
-				reg_read_data1 <= reg_file(to_integer(unsigned(reg_read_addr1)));
-				reg_read_data2 <= reg_file(to_integer(unsigned(reg_read_addr2)));
-				reg_read_data3 <= reg_file(to_integer(unsigned(reg_read_addr3)));
 		end if;			   							 
 	end process;
 	
-	decode : process(instruction)
+	decode : process(all)
 	begin
 		
 		if((instruction(18 downto 15) = "0000") AND (instruction(24 downto 23) = "11")) then -- if the instruction is nop then do not write

@@ -60,7 +60,7 @@ end Processor_top_level;
 
 
 architecture Processor_top_level of Processor_top_level is
-signal PC : std_logic_vector(5 downto 0);
+-- signal PC : std_logic_vector(5 downto 0);
 signal rs1_data : std_logic_vector(127 downto 0);
 signal rs2_data : std_logic_vector(127 downto 0);
 signal rs3_data : std_logic_vector(127 downto 0);
@@ -85,8 +85,8 @@ signal rd_data_EX_WB	: std_logic_vector(127 downto 0);
 signal write_en_out_EX_WB : std_logic;
 signal write_en_out_ID_EX : std_logic;
 
-signal reg_write_addr : std_logic_vector(31 downto 0);
-signal reg_write_data : std_logic_vector(127 downto 0);
+-- signal reg_write_addr : std_logic_vector(31 downto 0);
+-- signal reg_write_data : std_logic_vector(127 downto 0);
 
 signal instr_rd : std_logic_vector(4 downto 0);
 
@@ -188,6 +188,7 @@ begin
 
 	Forwarding_unit_inst : entity work.forwarding_unit
 		port map(
+			instr_type => instr_opcode_ID_EX(9 downto 8),
 			instruction_WB => instr_rd_EX_WB,
 			rd_addr_EX => instr_rd_ID_EX,
 			rs1_addr_EX => rs1_addr_ID_EX,
@@ -205,7 +206,7 @@ begin
 			rs1_reg => rs1_data_ID_EX,
 			rs2_reg => rs2_data_ID_EX,
 			rs3_reg => rs3_data_ID_EX,
-			rd_EX_WB => ALU_result,
+			rd_EX_WB => rd_data_EX_WB,
 			rs1_select => rs1_select,
 			rs2_select => rs2_select,
 			rs3_select => rs3_select,

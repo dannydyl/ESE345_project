@@ -27,6 +27,7 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity forwarding_unit is
 	port (
+	instr_type : in std_logic_vector(1 downto 0);		-- instruction type
 	instruction_WB : in std_logic_vector(4 downto 0);	-- instruction at the writeback stage
 	rd_addr_EX : in std_logic_vector(4 downto 0);		-- rd address at the execute stage
 	rs1_addr_EX : in std_logic_vector(4 downto 0);	-- instruction at the execute stage
@@ -53,28 +54,30 @@ begin
 		
 		-- Compare ID/EX pipeline register to forwarded value 
 		
-		if load_flag_in = '0' and instruction_WB = rd_addr_EX and forward_enable = '1' then	-- Comparing rd_wb with rd_ex for load immediate instruction
+		if load_flag_in = '1' and instruction_WB = rd_addr_EX and forward_enable = '1' then	-- Comparing rd_wb with rd_ex for load immediate instruction
 			rs1_select <= '1';
 		else 
 			rs1_select <= '0';
 		end if;
 			
 		
-		if instruction_WB = rs1_addr_EX and forward_enable = '1' then	-- Comparing rd with rs1
+		if load_flag_in = '0' and instruction_WB = rs1_addr_EX and forward_enable = '1' then	-- Comparing rd with rs1
 			rs1_select <= '1';																		-- Sends signal to forwarding multiplxer for forwarding																										
 		else
 			rs1_select <= '0';
 		end if;
 			
 		
-		if instruction_WB = rs2_addr_EX and forward_enable = '1' then	-- Comparing rd with rs2
+		if load_flag_in = '0' and instruction_WB = rs2_addr_EX and forward_enable = '1' then	-- Comparing rd with rs2
 			rs2_select <= '1';																		
 		else
 			rs2_select <= '0';
 		end if;
-		
-	
-		if instruction_WB = rs3_addr_EX and forward_enable = '1' then	-- Comparing rd with rs3
+
+		-- when R3 instruction, don't compare rs3
+		if instr_type = "11" then
+			rs3_select <= '0';
+		elsif load_flag_in = '0' and instruction_WB = rs3_addr_EX and forward_enable = '1' then	-- Comparing rd with rs3
 			rs3_select <= '1';																		
 		else
 			rs3_select <= '0';
