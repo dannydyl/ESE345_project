@@ -54,6 +54,9 @@ architecture processor_top_testbench of processor_top_testbench is
 	signal ID_EX_rs3_addr_v : std_logic_vector(4 downto 0);
 	signal ID_EX_write_en_v : std_logic;
 	signal ID_EX_load_flag_v : std_logic;
+	signal FW_rs1_select_v : std_logic;
+	signal FW_rs2_select_v : std_logic;
+	signal FW_rs3_select_v : std_logic;
 	signal ALU_result_v : std_logic_vector(127 downto 0);
 	signal EX_WB_rd_address_v : std_logic_vector(4 downto 0);
 	signal EX_WB_rd_data_v : std_logic_vector(127 downto 0);
@@ -82,6 +85,9 @@ begin
 			ID_EX_rs3_addr_v => ID_EX_rs3_addr_v,
 			ID_EX_write_en_v => ID_EX_write_en_v,
 			ID_EX_load_flag_v => ID_EX_load_flag_v,
+			FW_rs1_select_v => FW_rs1_select_v,
+			FW_rs2_select_v => FW_rs2_select_v,
+			FW_rs3_select_v => FW_rs3_select_v,
 			ALU_result_v => ALU_result_v,
 			EX_WB_rd_address_v => EX_WB_rd_address_v,
 			EX_WB_rd_data_v => EX_WB_rd_data_v,
@@ -147,6 +153,9 @@ begin
 				write(result_line, string'("[ID] rs3 Address: " & to_string(ID_EX_rs3_addr_v) & LF));
 				write(result_line, string'("[ID] Write Enable: " & to_string(ID_EX_write_en_v) & LF));
 				write(result_line, string'("[ID] Load Flag: " & to_string(ID_EX_load_flag_v) & LF & LF));
+				write(result_line, string'("[FW] rs1 Select: " & to_string(FW_rs1_select_v) & LF));
+				write(result_line, string'("[FW] rs2 Select: " & to_string(FW_rs2_select_v) & LF));
+				write(result_line, string'("[FW] rs3 Select: " & to_string(FW_rs3_select_v) & LF & LF));
 				write(result_line, string'("[EXE] ALU Result: " & to_string(ALU_result_v) & LF));
 				write(result_line, string'("[EXE] rd Address: " & to_string(EX_WB_rd_address_v) & LF));
 				write(result_line, string'("[EXE] rd Data: " & to_string(EX_WB_rd_data_v) & LF));

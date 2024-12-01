@@ -46,6 +46,10 @@ entity Processor_top_level is
 		ID_EX_write_en_v : out std_logic;
 		ID_EX_load_flag_v : out std_logic;
 
+		FW_rs1_select_v : out std_logic;
+		FW_rs2_select_v : out std_logic;
+		FW_rs3_select_v : out std_logic;
+
 		ALU_result_v : out std_logic_vector(127 downto 0);
 
 		EX_WB_rd_address_v : out std_logic_vector(4 downto 0);
@@ -252,6 +256,10 @@ begin
 		ID_EX_rs3_addr_v <= rs3_rf;
 		ID_EX_write_en_v <= write_en_out_rf;
 		ID_EX_load_flag_v <= load_rf;
+
+		FW_rs1_select_v <= rs1_select;
+		FW_rs2_select_v <= rs2_select;
+		FW_rs3_select_v <= rs3_select;
 
 		ALU_result_v <= ALU_result;
 
