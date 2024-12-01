@@ -27,7 +27,9 @@ entity instruction_buffer is
 		rst : in std_logic;
 		load_en : in std_logic;
 		instruction_in : in std_logic_vector(24 downto 0);
-		instruction_out : out std_logic_vector(24 downto 0)
+		instruction_out : out std_logic_vector(24 downto 0);
+		no_more_instruction : out std_logic;
+		PC_out_v : out std_logic_vector(5 downto 0)
 	);
 end instruction_buffer;
 
@@ -42,25 +44,27 @@ begin
 		port map(
 			clk => clk,
 			rst => rst,
-			PC_out => PC_current
+			PC_out => PC_current,
+			PC_out_2 => PC_out_v
 		);
 
 	-- loading instructions into instruction buffer
-	process(clk)
+	process(clk, rst)
 	begin
-		if rising_edge(clk) then
+		if rst = '1' then
+			instr_buffer <= (others => (others => '0'));
+			no_more_instruction <= '0';
+		elsif rising_edge(clk) then
 			if load_en = '1' then
 				instr_buffer(to_integer(unsigned(PC_current))) <= instruction_in;
+			else
+				instruction_out <= instr_buffer(to_integer(unsigned(PC_current)));	
+				if to_integer(unsigned(PC_current)) = line_length-1 then
+					no_more_instruction <= '1';
+				else
+					no_more_instruction <= '0';
+				end if;
 			end if;
 		end if;
 	end process;
-
-	-- instruction being fetched from instruction buffer
-	process(clk)
-	begin
-		if rising_edge(clk) then
-			instruction_out <= instr_buffer(to_integer(unsigned(PC_current)));
-		end if;
-	end process;
-
 end behavioral;

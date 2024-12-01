@@ -26,7 +26,34 @@ entity Processor_top_level is
 		clk : in std_logic;
 		rst : in std_logic;
 		load_en : in std_logic;
-		instruction : in std_logic_vector(24 downto 0)
+		instruction : in std_logic_vector(24 downto 0);
+		done_flag : out std_logic;
+
+		-- for each register stage (v for verification)
+		PC_v : out std_logic_vector(5 downto 0);
+
+		IF_ID_instruction_v : out std_logic_vector(24 downto 0);
+
+		ID_EX_instr_opcode_v : out std_logic_vector(9 downto 0);
+		ID_EX_instr_imme_v : out std_logic_vector(15 downto 0);
+		ID_EX_instr_rd_v : out std_logic_vector(4 downto 0);
+		ID_EX_rs1_data_v : out std_logic_vector(127 downto 0);
+		ID_EX_rs2_data_v : out std_logic_vector(127 downto 0);
+		ID_EX_rs3_data_v : out std_logic_vector(127 downto 0);
+		ID_EX_rs1_addr_v : out std_logic_vector(4 downto 0);
+		ID_EX_rs2_addr_v : out std_logic_vector(4 downto 0);
+		ID_EX_rs3_addr_v : out std_logic_vector(4 downto 0);
+		ID_EX_write_en_v : out std_logic;
+		ID_EX_load_flag_v : out std_logic;
+
+		ALU_result_v : out std_logic_vector(127 downto 0);
+
+		EX_WB_rd_address_v : out std_logic_vector(4 downto 0);
+		EX_WB_rd_data_v : out std_logic_vector(127 downto 0);
+		EX_WB_write_en_v : out std_logic;
+
+		WB_write_addr_v : out std_logic_vector(4 downto 0);
+		WB_write_data_v : out std_logic_vector(127 downto 0)
 
 	);
 end Processor_top_level;
@@ -83,6 +110,7 @@ signal rs3_rf : std_logic_vector(4 downto 0);
 signal rs1_addr_ID_EX : std_logic_vector(4 downto 0);
 signal rs2_addr_ID_EX : std_logic_vector(4 downto 0);
 signal rs3_addr_ID_EX : std_logic_vector(4 downto 0);
+
 begin
 
 	instr_buffer_inst : entity work.instruction_buffer
@@ -91,7 +119,9 @@ begin
 			rst => rst,
 			load_en => load_en,
 			instruction_in => instruction,
-			instruction_out => fetched_instruction
+			instruction_out => fetched_instruction,
+			no_more_instruction => done_flag, -- when all instructions are executed, done_flag is set to 1
+			PC_out_v => PC_v
 		);
 
 	IF_ID_inst : entity work.IF_ID_Reg
@@ -207,5 +237,28 @@ begin
 			rd_out => rd_data_EX_WB,
 			write_en_out => write_en_out_EX_WB
 		);
+
+		IF_ID_instruction_v <= fetched_instruction;
+
+		ID_EX_instr_opcode_v <= instr_opcode;
+		ID_EX_instr_imme_v <= instr_imme;
+		ID_EX_instr_rd_v <= instr_rd;
+		ID_EX_rs1_data_v <= rs1_data;
+		ID_EX_rs2_data_v <= rs2_data;
+		ID_EX_rs3_data_v <= rs3_data;
+		ID_EX_rs1_addr_v <= rs1_rf;
+		ID_EX_rs2_addr_v <= rs2_rf;
+		ID_EX_rs3_addr_v <= rs3_rf;
+		ID_EX_write_en_v <= write_en_out_rf;
+		ID_EX_load_flag_v <= load_rf;
+
+		ALU_result_v <= ALU_result;
+
+		EX_WB_rd_address_v <= instr_rd_ID_EX;
+		EX_WB_rd_data_v <= ALU_result;
+		EX_WB_write_en_v <= write_en_out_ID_EX;
+
+		WB_write_addr_v <= instr_rd_EX_WB;
+		WB_write_data_v <= rd_data_EX_WB;
 
 end Processor_top_level;

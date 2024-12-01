@@ -25,7 +25,8 @@ entity Program_Counter is
 	port(
 		clk : in std_logic;
 		rst : in std_logic;
-		PC_out : out std_logic_vector(5 downto 0)
+		PC_out : out std_logic_vector(5 downto 0);
+		PC_out_2 : out std_logic_vector(5 downto 0)
 	);
 end Program_Counter;
 
@@ -42,5 +43,6 @@ begin
 	end process;
 
 	PC_out <= std_logic_vector(counter);
+	PC_out_2 <= std_logic_vector(counter);
 
 end Program_Counter;
