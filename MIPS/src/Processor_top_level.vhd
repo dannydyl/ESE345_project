@@ -48,6 +48,41 @@ signal rs3_data_ID_EX : std_logic_vector(127 downto 0);
 signal instr_opcode_ID_EX : std_logic_vector(9 downto 0);
 signal instr_imme_ID_EX : std_logic_vector(15 downto 0);
 signal instr_rd_ID_EX : std_logic_vector(4 downto 0);
+
+signal rs1_muxed_data : std_logic_vector(127 downto 0);
+signal rs2_muxed_data : std_logic_vector(127 downto 0);
+signal rs3_muxed_data : std_logic_vector(127 downto 0);
+
+signal rd_data_EX_WB	: std_logic_vector(127 downto 0);
+
+signal write_en_out_EX_WB : std_logic;
+signal write_en_out_ID_EX : std_logic;
+
+signal reg_write_addr : std_logic_vector(31 downto 0);
+signal reg_write_data : std_logic_vector(127 downto 0);
+
+signal instr_rd : std_logic_vector(4 downto 0);
+
+signal write_en_out_rf : std_logic;
+
+signal ALU_result : std_logic_vector(127 downto 0);
+
+signal instr_rd_EX_WB : std_logic_vector(4 downto 0);
+
+signal rs1_select : std_logic;
+signal rs2_select : std_logic;
+signal rs3_select : std_logic;
+
+signal load_rf : std_logic;
+signal load_flag_ID_EX : std_logic;
+
+signal rs1_rf : std_logic_vector(4 downto 0);
+signal rs2_rf : std_logic_vector(4 downto 0);
+signal rs3_rf : std_logic_vector(4 downto 0);
+
+signal rs1_addr_ID_EX : std_logic_vector(4 downto 0);
+signal rs2_addr_ID_EX : std_logic_vector(4 downto 0);
+signal rs3_addr_ID_EX : std_logic_vector(4 downto 0);
 begin
 
 	instr_buffer_inst : entity work.instruction_buffer
@@ -71,9 +106,9 @@ begin
 		port map(
 			clk => clk,
 			rst => rst,
-			reg_write_en => reg_write_en,
-			reg_write_addr => reg_write_addr,
-			reg_write_data => reg_write_data,
+			reg_write_en => write_en_out_EX_WB,
+			reg_write_addr => instr_rd_EX_WB,
+			reg_write_data => rd_data_EX_WB,
 			instruction => IF_ID_instruction, -- input instruction [24:0]
 			reg_read_addr1 => IF_ID_instruction(9 downto 5),
 			reg_read_addr2 => IF_ID_instruction(14 downto 10),
@@ -82,9 +117,14 @@ begin
 			reg_read_data1 => rs1_data,
 			reg_read_data2 => rs2_data,
 			reg_read_data3 => rs3_data,
+			reg_rs1_addr_out => rs1_rf, -- rs1, rs2, rs3 address for forwarding unit
+			reg_rs2_addr_out => rs2_rf,
+			reg_rs3_addr_out => rs3_rf,
 			instr_opcode => instr_opcode, -- extract opcode instruction[24:15]
 			instr_imme => instr_imme, -- extract immediate instruction[20:5]
-			instr_rd => instr_rd -- extract rd instruction[4:0]
+			instr_rd => instr_rd, -- extract rd instruction[4:0]
+			write_en_out => write_en_out_rf,
+			load_flag_out => load_rf
 		);
 
 	ID_EX_inst : entity work.ID_EX_Reg
@@ -97,37 +137,75 @@ begin
 			rs1_data_in => rs1_data,
 			rs2_data_in => rs2_data,
 			rs3_data_in => rs3_data,
+			rs1_addr_in => rs1_rf,
+			rs2_addr_in => rs2_rf,
+			rs3_addr_in => rs3_rf,
+			write_en_in => write_en_out_rf,
+			load_flag_in => load_rf,
 
 			instr_opcode_out => instr_opcode_ID_EX,
 			instr_imme_out => instr_imme_ID_EX,
 			instr_rd_out => instr_rd_ID_EX,
 			rs1_data_out => rs1_data_ID_EX,
 			rs2_data_out => rs2_data_ID_EX,
-			rs3_data_out => rs3_data_ID_EX
+			rs3_data_out => rs3_data_ID_EX,
+			rs1_addr_out => rs1_addr_ID_EX,
+			rs2_addr_out => rs2_addr_ID_EX,
+			rs3_addr_out => rs3_addr_ID_EX,
+			write_en_out => write_en_out_ID_EX,
+			load_flag_out => load_flag_ID_EX
 		);
 
-	Fowarding_unit_inst : entity work.Fowarding_unit
+	Forwarding_unit_inst : entity work.forwarding_unit
 		port map(
+			instruction_WB => instr_rd_EX_WB,
+			rd_addr_EX => instr_rd_ID_EX,
+			rs1_addr_EX => rs1_addr_ID_EX,
+			rs2_addr_EX => rs2_addr_ID_EX,
+			rs3_addr_EX => rs3_addr_ID_EX,
+			write_en_EX => write_en_out_ID_EX,
+			load_flag_in => load_flag_ID_EX,
+			rs1_select => rs1_select,
+			rs2_select => rs2_select,
+			rs3_select => rs3_select
+		);
 
+	Fowarding_mux_inst : entity work.forwarding_mux
+		port map(
+			rs1_reg => rs1_data_ID_EX,
+			rs2_reg => rs2_data_ID_EX,
+			rs3_reg => rs3_data_ID_EX,
+			rd_EX_WB => ALU_result,
+			rs1_select => rs1_select,
+			rs2_select => rs2_select,
+			rs3_select => rs3_select,
+
+			rs1 => rs1_muxed_data,
+			rs2 => rs2_muxed_data,
+			rs3 => rs3_muxed_data
 		);
 
 	ALU_inst : entity work.ALU_top_level
 		port map(
-			input_rs3 => rs3_data_ID_EX,
-			input_rs2 => rs2_data_ID_EX,
-			input_rs1 => rs1_data_ID_EX,
+			input_rs3 => rs3_muxed_data,
+			input_rs2 => rs2_muxed_data,
+			input_rs1 => rs1_muxed_data,
 			instr => instr_opcode_ID_EX,
 			imme => instr_imme_ID_EX,
 			output_result => ALU_result
 		);
 
-	EX_MEM_inst : entity work.EX_MEM_Reg
+	EX_WB_inst : entity work.EX_WB_Reg
 		port map(
+			clk => clk,
+			rst => rst,
+			rd_address_in => instr_rd_ID_EX,
+			rd_in => ALU_result,
+			write_en_in => write_en_out_ID_EX,
 
+			rd_address_out => instr_rd_EX_WB,
+			rd_out => rd_data_EX_WB,
+			write_en_out => write_en_out_EX_WB
 		);
-
-	
-	
-
 
 end Processor_top_level;

@@ -49,6 +49,10 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 /Register_file.vhd=-1
 /Processor_top_level.vhd=-1
 /processor_top_testbench.vhd=-1
+/EX_WB_Reg.vhd=-1
+/forwarding_mux.vhd=-1
+/forwarding_unit.vhd=-1
+/Processor_top_level.vhd=-1
 [Files.Data]
 .\src\R3_instruction.vhd=VHDL Source Code
 .\src\op_package.vhd=VHDL Source Code
@@ -81,6 +85,10 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 .\src\Register_file.vhd=VHDL Source Code
 .\src\Processor_top_level.vhd=VHDL Source Code
 .\src\processor_top_testbench.vhd=VHDL Source Code
+.\src\EX_WB_Reg.vhd=VHDL Source Code
+.\src\forwarding_mux.vhd=VHDL Source Code
+.\src\forwarding_unit.vhd=VHDL Source Code
+.\src\Processor_top_level.vhd=VHDL Source Code
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0
@@ -96,3 +104,7 @@ DisableRangeChecks=0
 ProtectLevel=0
 IncrementalCompilation=0
 AdditionalOptions=
+[HierarchyViewer]
+HierarchyInformation=tb_alu_top_level|tb_alu_top_level|0
+ShowHide=ShowTopLevel
+Selected=

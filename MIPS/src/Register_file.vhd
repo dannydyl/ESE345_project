@@ -25,23 +25,30 @@ entity Register_file is
 	port(
 		clk : in std_logic;
 		rst : in std_logic;
+
+		instruction : in std_logic_vector(24 downto 0);
 		
 		reg_write_en : in std_logic;
-		reg_write_addr : in std_logic_vector(31 downto 0);
+		reg_write_addr : in std_logic_vector(4 downto 0);
 		reg_write_data : in std_logic_vector(127 downto 0);
 		
-		reg_read_addr1 : in std_logic_vector(31 downto 0);
-		reg_read_addr2 : in std_logic_vector(31 downto 0);
-		reg_read_addr3 : in std_logic_vector(31 downto 0);
+		reg_read_addr1 : in std_logic_vector(4 downto 0);
+		reg_read_addr2 : in std_logic_vector(4 downto 0);
+		reg_read_addr3 : in std_logic_vector(4 downto 0);
+
 		reg_read_data1 : out std_logic_vector(127 downto 0);
 		reg_read_data2 : out std_logic_vector(127 downto 0);
 		reg_read_data3 : out std_logic_vector(127 downto 0);
 
-		instruction : in std_logic_vector(24 downto 0);
-		instr_opcode : out std_logic_vector(5 downto 0);
-		instr_imme : out std_logic_vector(15 downto 0);
-		instr_rd : out std_logic_vector(4 downto 0)
+		reg_rs1_addr_out : out std_logic_vector(4 downto 0);
+		reg_rs2_addr_out : out std_logic_vector(4 downto 0);
+		reg_rs3_addr_out : out std_logic_vector(4 downto 0);
 
+		instr_opcode : out std_logic_vector(9 downto 0);
+		instr_imme : out std_logic_vector(15 downto 0);
+		instr_rd : out std_logic_vector(4 downto 0);
+		write_en_out : out std_logic;
+		load_flag_out : out std_logic
 	);
 end Register_file;
 
@@ -49,9 +56,6 @@ architecture Register_file of Register_file is
 	type register_file is array(0 to 31) of std_logic_vector(127 downto 0);
 	signal reg_file : register_file;
 begin
-	instr_opcode <= instruction(24 downto 15);
-	instr_imme <= instruction(20 downto 5);
-	instr_rd <= instruction(4 downto 0);
 
 	process(clk, rst)
 	begin
@@ -60,11 +64,6 @@ begin
 				reg_file(i) <= (others => '0');
 			end loop;
 		elsif rising_edge(clk) then
-
-			reg_read_data1 <= reg_file(to_integer(unsigned(reg_read_addr1)));
-			reg_read_data2 <= reg_file(to_integer(unsigned(reg_read_addr2)));
-			reg_read_data3 <= reg_file(to_integer(unsigned(reg_read_addr3)));
-
 			if reg_write_en = '1' then
 				reg_file(to_integer(unsigned(reg_write_addr))) <= reg_write_data;
 
@@ -81,7 +80,30 @@ begin
 					reg_read_data3 <= reg_write_data;
 				end if;
 
+				if(instr_opcode(3 downto 0) = "0000") then -- if the instruction is nop
+					write_en_out <= '0';
+				else
+					write_en_out <= '1';
+				end if;
+			else
+				reg_read_data1 <= reg_file(to_integer(unsigned(reg_read_addr1)));
+				reg_read_data2 <= reg_file(to_integer(unsigned(reg_read_addr2)));
+				reg_read_data3 <= reg_file(to_integer(unsigned(reg_read_addr3)));
 			end if;
+
+			if(instr_opcode(9) = '0') then -- if instruction is load, then load flag 1
+				load_flag_out <= '1';
+			else
+				load_flag_out <= '0';
+			end if;
+
+			instr_opcode <= instruction(24 downto 15);
+			instr_imme <= instruction(20 downto 5);
+			instr_rd <= instruction(4 downto 0);
+
+			reg_rs1_addr_out <= reg_read_addr1;
+			reg_rs2_addr_out <= reg_read_addr2;
+			reg_rs3_addr_out <= reg_read_addr3;
 		end if;
 	end process;
 

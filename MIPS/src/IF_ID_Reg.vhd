@@ -40,4 +40,4 @@ begin
 			instruction_out <= instruction_in;
 		end if;
 	end process;
-end IF_ID_Reg;
+end behavioral;

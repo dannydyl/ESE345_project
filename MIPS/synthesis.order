@@ -27,3 +27,6 @@ i<>.\src\Program_Counter.vhd
 i<>.\src\Register_file.vhd
 i<>.\src\Processor_top_level.vhd
 i<>.\src\processor_top_testbench.vhd
+i<>.\src\EX_WB_Reg.vhd
+i<>.\src\forwarding_mux.vhd
+i<>.\src\forwarding_unit.vhd

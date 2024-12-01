@@ -27,3 +27,6 @@
 .\src\Register_file.vhd
 .\src\Processor_top_level.vhd
 .\src\processor_top_testbench.vhd
+.\src\EX_WB_Reg.vhd
+.\src\forwarding_mux.vhd
+.\src\forwarding_unit.vhd
