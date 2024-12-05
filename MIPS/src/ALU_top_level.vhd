@@ -26,6 +26,7 @@ entity ALU_top_level is
 		input_rs3 : in std_logic_vector(127 downto 0); -- from rs3
 		input_rs2 : in std_logic_vector(127 downto 0); -- from rs2 
 		input_rs1 : in std_logic_vector(127 downto 0); -- from rs1
+		input_rd : in std_logic_vector(127 downto 0); -- from rd
 		instr : in std_logic_vector(9 downto 0);
 		imme  : in std_logic_vector(15 downto 0);
 		output_result : out std_logic_vector(127 downto 0)
@@ -42,7 +43,7 @@ begin
 	-- Li type
 	li_type : entity work.load_instruction
 		port map(
-			old_rd => input_rs1, -- take R[rd] from rs1 port
+			old_rd => input_rd, -- take R[rd] from rs1 port
 			load_index => instr(8 downto 6),
 			immediate => imme,
 			new_rd => Li_output_result

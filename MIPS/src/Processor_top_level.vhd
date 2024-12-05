@@ -115,6 +115,8 @@ signal rs1_addr_ID_EX : std_logic_vector(4 downto 0);
 signal rs2_addr_ID_EX : std_logic_vector(4 downto 0);
 signal rs3_addr_ID_EX : std_logic_vector(4 downto 0);
 
+signal rd_read_load : std_logic_vector(127 downto 0);
+
 begin
 
 	instr_buffer_inst : entity work.instruction_buffer
@@ -147,10 +149,12 @@ begin
 			reg_read_addr1 => IF_ID_instruction(9 downto 5),
 			reg_read_addr2 => IF_ID_instruction(14 downto 10),
 			reg_read_addr3 => IF_ID_instruction(19 downto 15),
+			reg_read_rd => IF_ID_instruction(4 downto 0),
 
 			reg_read_data1 => rs1_data,
 			reg_read_data2 => rs2_data,
 			reg_read_data3 => rs3_data,
+			reg_read_data_rd => rd_read_load,
 			reg_rs1_addr_out => rs1_rf, -- rs1, rs2, rs3 address for forwarding unit
 			reg_rs2_addr_out => rs2_rf,
 			reg_rs3_addr_out => rs3_rf,
@@ -225,6 +229,7 @@ begin
 			input_rs3 => rs3_muxed_data,
 			input_rs2 => rs2_muxed_data,
 			input_rs1 => rs1_muxed_data,
+			input_rd => rd_read_load,
 			instr => instr_opcode_ID_EX,
 			imme => instr_imme_ID_EX,
 			output_result => ALU_result

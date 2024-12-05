@@ -35,10 +35,12 @@ entity Register_file is
 		reg_read_addr1 : in std_logic_vector(4 downto 0);
 		reg_read_addr2 : in std_logic_vector(4 downto 0);
 		reg_read_addr3 : in std_logic_vector(4 downto 0);
+		reg_read_rd : in std_logic_vector(4 downto 0);
 
 		reg_read_data1 : out std_logic_vector(127 downto 0);
 		reg_read_data2 : out std_logic_vector(127 downto 0);
 		reg_read_data3 : out std_logic_vector(127 downto 0);
+		reg_read_data_rd : out std_logic_vector(127 downto 0);
 
 		reg_rs1_addr_out : out std_logic_vector(4 downto 0);
 		reg_rs2_addr_out : out std_logic_vector(4 downto 0);
@@ -62,6 +64,7 @@ begin
 		reg_read_data1 <= reg_file(to_integer(unsigned(reg_read_addr1)));
 		reg_read_data2 <= reg_file(to_integer(unsigned(reg_read_addr2)));
 		reg_read_data3 <= reg_file(to_integer(unsigned(reg_read_addr3)));
+		reg_read_data_rd <= reg_file(to_integer(unsigned(reg_read_rd)));
 		if reg_write_en = '1' then
 				-- if the register is being written and read at the sametime, bypass the data
 				if(reg_write_addr = reg_read_addr1) then
@@ -100,6 +103,7 @@ begin
 		reg_rs1_addr_out <= reg_read_addr1;	  -- for forwarding unit
 		reg_rs2_addr_out <= reg_read_addr2;
 		reg_rs3_addr_out <= reg_read_addr3;
+		
 		
 	end process;
 	

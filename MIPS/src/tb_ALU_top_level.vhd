@@ -30,7 +30,8 @@ end tb_ALU_top_level;
 architecture tb_ALU_top_level of tb_ALU_top_level is
 	signal input_rs3 : std_logic_vector(127 downto 0);
 	signal input_rs2 : std_logic_vector(127 downto 0);
-	signal input_rs1 : std_logic_vector(127 downto 0);
+	signal input_rs1 : std_logic_vector(127 downto 0);	   
+	signal input_rd : std_logic_vector(127 downto 0);
 	signal instr : std_logic_vector(9 downto 0);
 	signal imme  : std_logic_vector(15 downto 0);
 	signal output_result : std_logic_vector(127 downto 0);
@@ -39,7 +40,8 @@ begin
 		port map(
 			input_rs3 => input_rs3,
 			input_rs2 => input_rs2,
-			input_rs1 => input_rs1,
+			input_rs1 => input_rs1,	   
+			input_rd => input_rd,
 			instr => instr,
 			imme => imme,
 			output_result => output_result
@@ -91,11 +93,11 @@ begin
 			report "R4 instruction testbench starting...";
 
 			report "[R4] testing SIMALS";
-			instr <= "1000000000"; -- SIMALS
-			input_rs1 <= "00000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001";  -- +1 in each 32-bit fields of rs1
-			input_rs2 <= "00000000000000000000000000000011000000000000000000000000000000110000000000000000000000000000001100000000000000000000000000000011";  -- +3 in each low 16-bit fields of rs2
-			input_rs3 <= "00000000000000000000000000000111000000000000000000000000000001110000000000000000000000000000011100000000000000000000000000000111";  -- +7 in each low 16-bit fields of rs3 	    	
-					wait for 1 ns;
+			instr <= "1000000000"; -- SIMALS	
+			input_rs1 <= x"00000000ABCD11000000000070007FFF";
+			input_rs2 <= x"00000000000000080000000000007FFF";
+			input_rs3 <= x"00000000000000020000000000007FFF";
+				wait for 1 ns;
 			
 			
 			-- Test Case 2: Negative Multiply-Add Operation

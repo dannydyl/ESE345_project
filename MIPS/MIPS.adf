@@ -52,7 +52,8 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 /processor_top_testbench.vhd=-1
 /tb_wavelength.asdb=-1
 /tb_wavelength.awc=-1
-/..\..\..\Processor_top_level.bde=-1
+/all_instruction_waveform.asdb=-1
+/all_instruction_waveform.awc=-1
 [Files.Data]
 .\src\RLH.vhd=VHDL Source Code
 .\src\SFHS.vhd=VHDL Source Code
@@ -89,6 +90,8 @@ fileopenfolder=\\Mac\Home\Downloads\drive-download-20241030T181750Z-001
 .\src\tb_wavelength.asdb=Accelerated Waveform File
 .\src\tb_wavelength.awc=Accelerated Waveform Configuration
 .\..\..\Processor_top_level.bde=Block Diagram
+.\src\all_instruction_waveform.asdb=Accelerated Waveform File
+.\src\all_instruction_waveform.awc=Accelerated Waveform Configuration
 [LocalVhdlSets]
 NetlistCompilation=1
 EnableVHDL93Key=0

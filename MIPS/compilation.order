@@ -30,4 +30,3 @@
 .\src\Processor_top_level.vhd
 .\src\tb_ALU_top_level.vhd
 .\src\processor_top_testbench.vhd
-.\..\..\Processor_top_level.bde

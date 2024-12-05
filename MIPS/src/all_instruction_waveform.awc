@@ -1,0 +1,70 @@
+<config>
+    <version>
+        3.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="001c42bde94864984c675d11c7000900">all_instruction_waveform.asdb</database>
+    </databases>
+    <gridshown/>
+    <signallists>
+        <signallist id="0">
+        <signal>/processor_top_testbench/rst</signal>
+        <signal>/processor_top_testbench/clk</signal>
+        <signal>/processor_top_testbench/processor_inst/IF_ID_inst/instruction_in</signal>
+        <signal>/processor_top_testbench/processor_inst/IF_ID_inst/instruction_out</signal>
+        <signal>/processor_top_testbench/done_flag</signal>
+        <signal>/processor_top_testbench/PC_v</signal>
+        <signal>/processor_top_testbench/IF_ID_instruction_v</signal>
+        <signal>/processor_top_testbench/ID_EX_instr_opcode_v</signal>
+        <signal>/processor_top_testbench/ID_EX_instr_imme_v</signal>
+        <signal>/processor_top_testbench/ID_EX_instr_rd_v</signal>
+        <signal>/processor_top_testbench/ID_EX_rs1_data_v</signal>
+        <signal>/processor_top_testbench/ID_EX_rs2_data_v</signal>
+        <signal>/processor_top_testbench/ID_EX_rs3_data_v</signal>
+        <signal>/processor_top_testbench/ID_EX_rs1_addr_v</signal>
+        <signal>/processor_top_testbench/ID_EX_rs2_addr_v</signal>
+        <signal>/processor_top_testbench/ID_EX_rs3_addr_v</signal>
+        <signal>/processor_top_testbench/ID_EX_write_en_v</signal>
+        <signal>/processor_top_testbench/ID_EX_load_flag_v</signal>
+        <signal>/processor_top_testbench/FW_rs1_select_v</signal>
+        <signal>/processor_top_testbench/FW_rs2_select_v</signal>
+        <signal>/processor_top_testbench/FW_rs3_select_v</signal>
+        <signal>/processor_top_testbench/ALU_result_v</signal>
+        <signal>/processor_top_testbench/EX_WB_rd_address_v</signal>
+        <signal>/processor_top_testbench/EX_WB_rd_data_v</signal>
+        <signal>/processor_top_testbench/EX_WB_write_en_v</signal>
+        <signal>/processor_top_testbench/WB_write_addr_v</signal>
+        <signal>/processor_top_testbench/WB_write_data_v</signal>
+        </signallist>
+    </signallists>
+    <timebases>
+        <timebase id="0">
+            <time start_time="0" end_time="1316807" />
+        </timebase>
+    </timebases>
+    <prefbases>
+        <prefbase id="0" >
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="1300000" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>
